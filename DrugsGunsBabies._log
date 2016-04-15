@@ -1,0 +1,238 @@
+Input File::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::0::0::Input File
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls::0::0::article 2014/09/29 v1.4h Standard LaTeX document class
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/base/size10.clo::0::0::Input File
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty::0::0::geometry 2010/09/12 v5.6 Page Geometry
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty::0::0::keyval 2014/10/28 v1.15 key=value parser (DPC)
+Input File::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty::0::0::ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty::0::0::pdfTeX in PDF mode is detected. (ifpdf)
+Input File::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifvtex.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifvtex.sty::0::0::ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifvtex.sty::0::0::VTeX not detected. (ifvtex)
+Input File::/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty::0::0::ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/natbib/natbib.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/natbib/natbib.sty::0::0::natbib 2010/09/13 8.31b (PWD, AO)
+LaTeX Info::/usr/local/texlive/2015/texmf-dist/tex/latex/natbib/natbib.sty::694::0::Redefining \cite.
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/doi/doi.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/doi/doi.sty::0::0::doi 2007/07/24 handle doi numbers
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty::0::0::hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+Input File::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty::0::0::hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+Input File::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty::0::0::hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty::0::0::hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty::0::0::infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty::0::0::ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty::0::0::ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty::0::0::LuaTeX not detected. (ifluatex)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty::0::0::Skipping package `ifvtex' (already loaded). (hobsub)
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty::0::0::intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty::0::0::Skipping package `ifpdf' (already loaded). (hobsub)
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty::0::0::etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty::0::0::Could not find \expanded. That can mean that you are not using pdfTeX 1.50 or that some package has redefined \expanded. In the latter case, load this package earlier. (etexcmds)
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty::0::0::kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty::0::0::kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty::0::0::pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty::0::0::LuaTeX not detected. (pdftexcmds)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty::0::0::\pdf@primitive is available. (pdftexcmds)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty::0::0::\pdf@ifprimitive is available. (pdftexcmds)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty::0::0::\pdfdraftmode found. (pdftexcmds)
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty::0::0::pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty::0::0::bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO)
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty::0::0::bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty::0::0::uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty::0::0::Skipping package `hobsub' (already loaded). (hobsub)
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty::0::0::letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty::0::0::hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty::0::0::xcolor-patch 2011/01/30 xcolor patch
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty::0::0::atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty::0::0::\enddocument detected (standard20110627). (atveryend)
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty::0::0::atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty::0::0::refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty::0::0::hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/auxhook.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/auxhook.sty::0::0::auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty::0::0::kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/pd1enc.def::0::0::Input File
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/hyperref.cfg::0::0::Input File
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty::4443::0::Hyper figures OFF. (hyperref)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty::4448::0::Link nesting OFF. (hyperref)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty::4451::0::Hyper index ON. (hyperref)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty::4458::0::Plain pages OFF. (hyperref)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty::4463::0::Backreferencing OFF. (hyperref)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty::0::0::Implicit mode ON; LaTeX internals redefined. (hyperref)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty::4688::0::Bookmarks ON. (hyperref)
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty::0::0::url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+LaTeX Info::/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty::5041::0::Redefining \url.
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty::6295::0::Hyper figures OFF. (hyperref)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty::6300::0::Link nesting OFF. (hyperref)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty::6303::0::Hyper index ON. (hyperref)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty::6310::0::backreferencing OFF. (hyperref)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty::6315::0::Link coloring OFF. (hyperref)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty::6320::0::Link coloring with OCG OFF. (hyperref)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty::6325::0::PDF/A mode OFF. (hyperref)
+LaTeX Info::/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty::6365::0::Redefining \ref.
+LaTeX Info::/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty::6369::0::Redefining \pageref.
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hpdftex.def::0::0::Input File
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty::0::0::rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty::282::0::New unique counter `rerunfilecheck'. (uniquecounter)
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/subfigure/subfigure.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/subfigure/subfigure.sty::0::0::subfigure 2002/03/15 v2.1.5 subfigure package
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/subfigure/subfigure.cfg::0::0::Input File
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty::0::0::graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty::0::0::graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty::0::0::trig 1999/03/16 v1.09 sin cos tan (DPC)
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg::0::0::Input File
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty::94::0::Driver file: pdftex.def. (graphics)
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def::0::0::Input File
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/multirow/multirow.sty::0::0::Input File
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/setspace/setspace.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/setspace/setspace.sty::0::0::setspace 2011/12/19 v6.7a set line spacing
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amssymb.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amssymb.sty::0::0::amssymb 2013/01/14 v3.01 AMS font symbols
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty::0::0::amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+LaTeX Font Info::/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty::106::0::   Overwriting math alphabet `\mathfrak' in version `bold' U/euf/m/n --> U/euf/b/n.
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/amscls/amsthm.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/amscls/amsthm.sty::0::0::amsthm 2015/03/04 v2.20.2
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty::0::0::amsmath 2013/01/14 v2.14 AMS math features
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty::0::0::amstext 2000/06/29 v2.01
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty::0::0::Input File
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty::0::0::amsbsy 1999/11/29 v1.2d
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty::0::0::amsopn 1999/12/14 v2.01 operator names
+LaTeX Info::/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty::210::0::Redefining \frac.
+LaTeX Info::/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty::306::0::Redefining \overline.
+LaTeX Info::/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty::378::0::Redefining \ldots.
+LaTeX Info::/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty::381::0::Redefining \dots.
+LaTeX Info::/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty::466::0::Redefining \cdots.
+LaTeX Font Info::/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty::566::0::   Redeclaring font encoding OML.
+LaTeX Font Info::/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty::567::0::   Redeclaring font encoding OMS.
+LaTeX Info::/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty::2665::0::Redefining \[.
+LaTeX Info::/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty::2666::0::Redefining \].
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/eqnarray/eqnarray.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/eqnarray/eqnarray.sty::0::0::eqnarray 
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/tools/array.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/tools/array.sty::0::0::array 2014/10/28 v2.4c Tabular extension package (FMi)
+Package Info::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::36::0::Option `colorlinks' set `true'. (hyperref)
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/footmisc/footmisc.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/footmisc/footmisc.sty::0::0::footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/footmisc/footmisc.sty::855::0::Declaring symbol style bringhurst. (footmisc)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/footmisc/footmisc.sty::863::0::Declaring symbol style chicago. (footmisc)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/footmisc/footmisc.sty::872::0::Declaring symbol style wiley. (footmisc)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/footmisc/footmisc.sty::883::0::Declaring symbol style lamport-robust. (footmisc)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/footmisc/footmisc.sty::903::0::Declaring symbol style lamport*. (footmisc)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/footmisc/footmisc.sty::924::0::Declaring symbol style lamport*-robust. (footmisc)
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty::0::0::caption 2013/05/02 v3.3-89 Customizing captions (AR)
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty::0::0::caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty::57::0::TeX engine: e-TeX. (caption3)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty::0::0::hyperref package is loaded. (caption)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty::0::0::subfigure package is loaded. (caption)
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty::0::0::xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg::0::0::Input File
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty::225::0::Driver file: pdftex.def. (xcolor)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty::1337::0::Model `cmy' substituted by `cmy0'. (xcolor)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty::1341::0::Model `hsb' substituted by `rgb'. (xcolor)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty::1353::0::Model `RGB' extended. (xcolor)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty::1355::0::Model `HTML' substituted by `rgb'. (xcolor)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty::1356::0::Model `Hsb' substituted by `hsb'. (xcolor)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty::1357::0::Model `tHsb' substituted by `hsb'. (xcolor)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty::1358::0::Model `HSB' substituted by `hsb'. (xcolor)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty::1359::0::Model `Gray' substituted by `gray'. (xcolor)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty::1360::0::Model `wave' substituted by `hsb'. (xcolor)
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/silence/silence.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/silence/silence.sty::0::0::silence 2012/07/02 v1.5b Selective filtering of warnings and error messages
+LaTeX Info::/usr/local/texlive/2015/texmf-dist/tex/latex/silence/silence.sty::433::0::Redefining \GenericWarning.
+LaTeX Info::/usr/local/texlive/2015/texmf-dist/tex/latex/silence/silence.sty::601::0::Redefining \GenericError.
+Input File::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/JDev/DrugsGunsBabies.aux::0::0::Input File
+LaTeX Error::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/JDev/DrugsGunsBabies.aux::19::0::Undefined control sequence. |\emailauthor {jmillan@eco.uc3m.es}{Jaime Mill\'an-Quijano}
+LaTeX Error::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/JDev/DrugsGunsBabies.aux::19::0::Missing \begin{document}. |\emailauthor{j millan@eco.uc3m.es}{Jaime Mill\'an-Quijano} 
+LaTeX Font Info::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::58::0::   Checking defaults for OML/cmm/m/it.
+LaTeX Font Info::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::58::0::   ... okay.
+LaTeX Font Info::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::58::0::   Checking defaults for T1/cmr/m/n.
+LaTeX Font Info::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::58::0::   ... okay.
+LaTeX Font Info::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::58::0::   Checking defaults for OT1/cmr/m/n.
+LaTeX Font Info::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::58::0::   ... okay.
+LaTeX Font Info::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::58::0::   Checking defaults for OMS/cmsy/m/n.
+LaTeX Font Info::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::58::0::   ... okay.
+LaTeX Font Info::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::58::0::   Checking defaults for OMX/cmex/m/n.
+LaTeX Font Info::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::58::0::   ... okay.
+LaTeX Font Info::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::58::0::   Checking defaults for U/cmr/m/n.
+LaTeX Font Info::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::58::0::   ... okay.
+LaTeX Font Info::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::58::0::   Checking defaults for PD1/pdf/m/n.
+LaTeX Font Info::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::58::0::   ... okay.
+Package Warning::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::0::0::The marginal notes overrun the paper. (geometry package)
+Package Info::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::58::0::Link coloring ON. (hyperref)
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty::0::0::nameref 2012/10/27 v2.43 Cross-referencing by name of section
+Input File::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty::0::0::gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+LaTeX Info::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::58::0::Redefining \ref.
+LaTeX Info::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::58::0::Redefining \pageref.
+LaTeX Info::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::58::0::Redefining \nameref.
+Input File::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/JDev/DrugsGunsBabies.out::0::0::Input File
+Input File::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/JDev/DrugsGunsBabies.out::0::0::Input File
+Input File::/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii::0::0::Input File
+hbox Warning::/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii::19::0::Overfull \hbox (222.64584pt too wide) in paragraph at lines 19--13
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty::0::0::epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty::0::0::Input File
+Input Package::/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty::0::0::grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+Package Info::/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty::452::0::Graphics extension search list: [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps] \AppendGraphicsExtensions. (grfext)
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg::0::0::Input File
+Package Info::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::0::0::Begin \AtBeginDocument code. (caption)
+Package Info::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::0::0::End \AtBeginDocument code. (caption)
+LaTeX Font Info::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::69::0::   Try loading font information for U+msa.
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd::0::0::Input File
+LaTeX Font Info::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::69::0::   Try loading font information for U+msb.
+Input File::/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd::0::0::Input File
+Input File::pdftex.def::0::0::Input File
+LaTeX Warning::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::0::0::`h' float specifier changed to `ht'.
+Input File::pdftex.def::0::0::Input File
+LaTeX Warning::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::0::0::`h' float specifier changed to `ht'.
+Input File::pdftex.def::0::0::Input File
+Input File::pdftex.def::0::0::Input File
+Input File::pdftex.def::0::0::Input File
+LaTeX Warning::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::0::0::`h' float specifier changed to `ht'.
+Input File::pdftex.def::0::0::Input File
+Input File::pdftex.def::0::0::Input File
+Input File::pdftex.def::0::0::Input File
+Input File::pdftex.def::0::0::Input File
+Input File::pdftex.def::0::0::Input File
+hbox Warning::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::423::0::Overfull \hbox (540.60239pt too wide) in paragraph at lines 423--440
+Input File::pdftex.def::0::0::Input File
+hbox Warning::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::448::0::Overfull \hbox (540.60239pt too wide) in paragraph at lines 448--454
+LaTeX Warning::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::0::0::`h' float specifier changed to `ht'.
+hbox Warning::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::649::0::Overfull \hbox (540.60239pt too wide) in paragraph at lines 649--658
+Input File::pdftex.def::0::0::Input File
+LaTeX Warning::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::0::0::`h' float specifier changed to `ht'.
+LaTeX Warning::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::0::0::`h' float specifier changed to `ht'.
+LaTeX Warning::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::0::0::`h' float specifier changed to `ht'.
+LaTeX Warning::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::0::0::`h' float specifier changed to `ht'.
+LaTeX Warning::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::0::0::`h' float specifier changed to `ht'.
+Input File::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/JDev/DrugsGunsBabies.bbl::0::0::Input File
+Package Info::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::1005::0::Empty hook `BeforeClearDocument'. (atveryend)
+Package Info::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::1005::0::Empty hook `AfterLastShipout'. (atveryend)
+Input File::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/JDev/DrugsGunsBabies.aux::0::0::Input File
+Package Info::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::1005::0::Executing hook `AtVeryEndDocument'. (atveryend)
+Package Info::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::1005::0::Executing hook `AtEndAfterFileList'. (atveryend)
+Package Info::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::0::0::File `DrugsGunsBabies.out' has not changed. Checksum: CC1484ABD1EAE516E7D800F0C9DDC4C0;1078. (rerunfilecheck)
+LaTeX Warning::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::0::0::Label(s) may have changed. Rerun to get cross-references right.
+Package Info::/Volumes/JMILLAN/WiP/DrugsGunsBabies/Documents/Drafts/WP_UC3M/DrugsGunsBabies.tex::1005::0::Empty hook `AtVeryVeryEnd'. (atveryend)

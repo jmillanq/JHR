@@ -1,0 +1,59 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: DrugsGunsBabies.aux
+The style file: elsarticle-harv.bst
+Database file #1: BibFertiltyConflict.bib
+I was expecting a `,' or a `}'---line 1744 of file BibFertiltyConflict.bib
+ :   
+ :   Keywords = {Cocaine Trafficking, Violence, Colombia, Networks}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--there's a number but no volume in AbramitzkyDelavandeVasconcelos2010
+Warning--there's a number but no volume in Bijwaard2008
+Warning--empty journal in MoyaCarter2014
+Warning--there's a number but no volume in MoyaCarter2014
+Warning--there's a number but no volume in RodriguezSanchez2009
+Warning--there's a number but no volume in Shemyakina2009
+Warning--empty note in SinghShemyakina2013
+You've used 37 entries,
+            2821 wiz_defined-function locations,
+            920 strings with 12015 characters,
+and the built_in function-call counts, 16144 in all, are:
+= -- 1704
+> -- 610
+< -- 40
++ -- 235
+- -- 192
+* -- 1315
+:= -- 2916
+add.period$ -- 110
+call.type$ -- 37
+change.case$ -- 261
+chr.to.int$ -- 43
+cite$ -- 44
+duplicate$ -- 661
+empty$ -- 1186
+format.name$ -- 284
+if$ -- 3317
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 28
+newline$ -- 132
+num.names$ -- 154
+pop$ -- 206
+preamble$ -- 1
+purify$ -- 210
+quote$ -- 0
+skip$ -- 522
+stack$ -- 0
+substring$ -- 907
+swap$ -- 117
+text.length$ -- 9
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 330
+warning$ -- 7
+while$ -- 138
+width$ -- 0
+write$ -- 426
+(There was 1 error message)

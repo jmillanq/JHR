@@ -1,0 +1,1000 @@
+%        File: DrugsGunsBabies.tex
+%     Created: Tue Mar 10 01:00 PM 2015 C
+% Last Change: Tue Mar 10 01:00 PM 2015 C
+%
+\documentclass[a4paper,10pt,twocolumn,preprint,3p,authoryear]{elsarticle}
+\usepackage{geometry}
+\geometry{verbose,tmargin=1.5cm,bmargin=1.5cm,lmargin=1cm,rmargin=1cm,headsep=0.2cm,footskip=0.5cm}
+%\usepackage[authoryear]{natbib}
+%\biboptions{longnamesfirst,angle,semicolon}
+\usepackage{doi}
+%\usepackage{abstract}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{\medskipamount}
+\renewcommand{\arraystretch}{1.1} % Within table line spacing
+\usepackage{subfigure}
+% To be able to import graph files
+\usepackage{graphicx}
+\graphicspath{{/Volumes/JMILLAN/WiP/DrugsGunsBabies/DataAnalysis/GraphFiles/}}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\newtheorem{prop}{Proposition}
+
+\usepackage{amsmath}
+\usepackage{eqnarray}
+%running fraction with slash - requires math mode.
+\newcommand*\rfrac[2]{{}^{#1}\!/_{#2}}
+
+\usepackage{hyperref}
+\hypersetup{
+     colorlinks = true,
+	 linkcolor = blue,
+     citecolor = blue
+}
+
+\usepackage[hang,flushmargin]{footmisc} 
+%% This changes the figure and table's title's font
+\usepackage[singlelinecheck=false,skip=2pt,font={footnotesize},labelfont=bf]{caption}
+%\usepackage{nomencl}
+%\usepackage{cite}
+%% This package is to set column with in my tables
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+% To insert colored boxes (maps legends)
+\usepackage{xcolor}
+\newcommand\crule[3][black]{\textcolor{#1}{\rule{#2}{#3}}}
+%The stars in the tables.
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+
+\usepackage{silence}
+\WarningFilter{latex}{Text page}
+\journal{Journal of Development Economics}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{frontmatter}
+	\title{Drugs, guns and early motherhood in Colombia}
+
+	\author{Jaime Mill\'an-Quijano}
+	\address{Universidad Carlos III de Madrid. \\
+		 Calle Madrid 126, Getafe. \\
+		 28093, Spain.} 
+	\ead{jmillan@eco.uc3m.es}
+
+	\begin{abstract}
+		 This paper examines the effect of violent crime on the prevalence of early motherhood in Colombia. To instrument for the predominance of violent crime I use geographical and temporal variation in drug trafficking networks. My results suggest that one standard deviation increase in the homicide rate induces a 2.55 percentage points increase in the probability of early motherhood. \\
+		  \emph{JEL: D74, K42, J13, C41}
+	\end{abstract}
+
+	\begin{keyword}
+		 Teenage pregnancy, Violent crime, Drug trafficking, Colombia.
+	\end{keyword}
+\end{frontmatter}
+
+
+%%%% The introduction begins here
+\section{Introduction\label{sec:Intro}}
+This paper aims to understand the behavioural rationale underlying differential teen pregnancy profiles in conflict areas. Indeed, I find that increases in municipality homicide rate increase the probability that a woman will be pregnant before she is 19 years old in Colombia.\footnote{The homicide rate is equal to the number of intentional homicides per 100 thousand habitants.}
+
+There is extensive literature that analyses the causes of early childbearing and the cost to parents and children. It has been shown that young mothers face reductions in the accumulation of human capital, labor opportunities, income and their own health.  (\citet{KlepingerLundbergPlotnick1999},  \citet{Buckles2008} and \citet{Fletcher2011}).  Furthermore, the outcomes in education, health and labor opportunities for the offspring of young mothers decrease significantly (\citet{KlepingerLundbergPlotnick1999}, \citet{Buckles2008}, \citet{Francesconi2008} and \citet{Miller2009,Miller2011}).
+
+Despite the drop of 17\% in the worldwide Teenage Fertility Rate (TFR\footnote{The TFR is defined as the number births from every 1000 women from 15 - 19 years old.}) from 2002 to 2011, the issue of early motherhood continues to be of public concern worldwide.\footnote{The World TFR dropped from 64.71 to 52.67. Data from \href{http://data.worldbank.org}{The World Bank}} For example, the average TFR in low income countries fell 34\% between 2002 and 2011.\footnote{Low income countries according to the World Bank classification.} Nevertheless, the average TFR in low income countries is 1.7 times the world average and 3.5 times the average in OECD countries.  What is more, against the worldwide decreasing tendency, countries like Spain and the United Kingdom showed increases of 18\% and 4\% in the TFR from 2002 to 2011. The TFR increased in Spain from 9.4 to 11.1 and from 28.6 to 29.7 in the United Kingdom between 2000 and 2011.
+
+\cite{FlorezSoto2007} describe the evolution of the fertility behaviour in Colombia. The authors argue that the increasing trend of the TFR in Colombia was not expected. According to the World Bank while the TFR in Latin America and the Caribbean dropped from 85.85 in 1997 to 81.57 in 2002, the rate in Colombia increased from 91.7 to 95.7. Fl\'orez and Soto pointed out that TFR continued increasing despite the improvements in education, health services and urbanization. Therefore, this paper claims that part of rise in teenage births was due to the violence of the armed conflict in the country.
+
+Concurrently, there is an increasing interest to understand the driving forces and mechanisms by which war, crime and armed conflict affect economic institutions.  However, analyses of internal conflicts usually face large heterogeneity of the causes, participants, characteristics and consequences of the violent process. More analytical challenges arise due to the multiple dimension is such violence and conflict affect economic agents and institutions. 
+
+\citet{Soares2013} reviews the different welfare implications of armed conflict and criminal violence. The author categorises the possible consequences as follows: firstly, there are direct losses as lifespan reductions and behavioural changes due to greater insecurity. Secondly, there is a social cost in the destruction of goods, public and private investment in security and the cost justice and imprisonment. Finally, crime can be the cause of reductions in productivity  or a decrease in investment as a response to shorter lifespans. Each conflict scenario implies different challenges when researches want to identify the economic effects of violence. Mainly, when researches look for exogenous violent shocks.
+
+Hence, this paper contributes to both, the growing literature to identify the indirect consequences of violent crime, and the understanding of the causes of early motherhood in developing countries. 
+
+The core argument of this work is that when a household is exposed to an increase in local violence, the cost-benefit relationship of postponing motherhood changes. In fact, the incentive to be a young mother increases. Firstly, armed violence reduces the incentive to invest in education, reduces the expected prize of postponing motherhood. Secondly, since violence affects men more than women changes in the sex ratios reduce the expected gains in the marriage markets. 
+
+Works such as \citet{AbramitzkyDelavandeVasconcelos2010} and \citet{Shemyakina2009} have found interesting relationships between violence of the civil war and marriage markets and fertility decisions. These authors take advantage of sharp, localised increases in violence to identify the effects of conflict over households. However, such sharp changes are not present in the Colombian case when the conflict is long-lasting and volatile.
+
+Thus, first I set up a theoretical framework that follows closely \cite{KearneyLevine2011} in order to describe the possible channels such violence could affect the cost-benefit relation of postponing motherhood. In order to test the model, I estimate a effect of the homicide rate at the municipality level on the hazard of being pregnant when a woman is younger than 19 years old. To instrument for the prevalence of local homicides, I use the interaction of the international cocaine prices and the potential cocaine trafficking network in Colombia. Identification relies on the fact that different regions in Colombia serve different international cocaine markets. Thus, when the price of cocaine rises in the United States (Europe), violence between drug traffickers, who compete for regional control, rises in the municipalities strategically placed to serve the American (European) market.  
+
+After accounting for endogeneity, I find that one standard deviation increase in the municipality homicide rate increases the probability of a woman to become pregnant for the first time before 19 years old by 2.55 percentage points with a 95\% confidence interval from 0.70 to 4.39 . What is more, an increase in violent kills increases the probability of early marriage but reduces the probability of early sexual intercourse and having a second baby before 19 years old. The latest results suggest that early pregnancy and marriage is being use by teenage women as an insurance strategy when women foresee a reduction in the future utility due to an increase in local violence.
+
+This paper has the following structure. After this introduction, section \ref{sec:Model}  explains the mechanisms by which exposure to armed violence changes the cost-benefit relationship of postponing motherhood. Section \ref{sec:EstStr} builds from the results for the previous section and motivates an empirical strategy to estimate the effect of municipality violence on the probability of becoming a young mother. What is more, in this section I discuss the endogeneity issues and identification. Section \ref{sec:Data} describes the data and section \ref{sec:Result} shows and discussed the results. Finally, section \ref{sec:Conclusions} concludes. 
+
+\section{A model of pregnancy and armed violence\label{sec:Model}}
+
+In this section I develop a model of women's fertility choices that help to understand the way in which the local violence, specifically homicides, affect the probability of becoming a young mother. I build on the work of \citet{KearneyLevine2011}, where the decision of postponing motherhood is driven by the subjective probability of economic success. I complement their model making explicit the role of the marriage market.
+
+This framework focuses only on the decision of the time of first pregnancy. Thus, I do not analyse decisions such as marriage, divorce or family size. However, I show later in this paper the importance of early marriage in this framework. In addition, this model only takes into account women's decisions and ignores male actions and matching equilibrium. The final restriction is due to the lack of data on male behaviour.
+
+\subsection{Model set up}
+
+Assume that a woman $i$ with characteristics $\mu_{i}$ lives over 2 periods $t=\left\{ 0,\,1\right\}$, which represent teenage and adulthood years respectively. $\mu_{i}$ represents the woman's characteristics that are valuable by man such as education, income, race and physical features. Women gain utility from consumption and motherhood.   
+
+On the one hand, if a woman has no children each period receives one random offer (couple) $x$ from the set of available men $\Omega_{it} \subset \mathbb{R}^{+}$. Once she receives an offer she decides either to have a baby with $x$ or not. Denote $G_{it}\left(x \right)$ as the cumulative distribution function \emph{(cdf)} of offers $x$ and $g_{it}\left(x\right)$ is the corresponding probability density function \emph{(pdf)}. At the beginning of period $t=0$ no woman has a baby and they all receive offers from their respective $\Omega_{it}$.
+
+When a woman accepts an offer $x$ she gains utility $v_{i}\left(x \right)= \alpha_{i} - \kappa + d_{i}\left( x \right)$ for one period, where $\alpha_{i} \geq 0$ is the direct utility of being a mother, baby care has a fixed cost of $\kappa \geq 0$ and $d_{i}\left( x \right)$ is the utility from the \emph{match surplus}. For simplicity, $d_{i}\left( x \right)=b_{i}\left(x - \mu_{i}\right)$ with $b_{i}>0$. Therefore, higher offers, better partners, will give a higher level of motherhood utility. It is important to point out that a woman accepts an offer $x$ only if $v_{i}\left(x \right) \ge 0$. For offers such that $v_{i}\left(x \right) < 0$, a woman prefers to stay single and childless.\footnote{In fact, given that $d_{i}\left( x \right)$ depends negatively on $\mu_{i}$, under different search technologies the equilibrium could lead to an assortative matching.} Finally, the mother will gain utility $\Psi_{i}\left(x \right)$ when her offspring has grown up. I assume that $\rfrac{\partial \Psi_{i}}{\partial x} \geq 0$. Given that the model only has 2 periods women will not gain $\Psi_{i}\left(x \right)$ if they decide to postpone motherhood to period 1.
+
+On the other hand, $u\left(c_{t}\right)$ represents the utility from consumption, where $u\left( \cdot \right)$ is an increasing and concave function. At $t=0$ women consume $c_{0}$ with probability 1. At $t=1$ women can have either high or low consumption. Declare, $c_{1}=\left\{\bar{c}_{1}, \ \underline{c}_{1}\right\}$ where $P\left(c_{1}=\bar{c}_{1} \right)=q$ and $\bar{c}_{1}>\underline{c}_{1}$. Following \citet{KearneyLevine2011}, $q-{i}$ is the subjective probability of achieving high consumption $\left( \bar{c}_{1} \right)$, in other words, the subjective probability of achieving economic success. The probability $q_{i}$ depends on each woman decision at $t=0$. If she decides to become a young mother, her subjective probability of success is $q_{i}^{e}$. Meanwhile, $q_{i}^{d}$ is her probability of getting high consumption if she decides to delay motherhood until $t=1$. As assumed in \citet{KearneyLevine2011}, this paper assumes that for every woman $i$, $q^{e}<q^{d}$. 
+
+As follows, with discount factor $\beta$, woman's $i$ lifetime expected utility of becoming a mother at $t=0$ for a given couple $x$ is: 
+
+\begin{equation}
+	U_{i}^{e}\left( x \right)=U_{i0}^{e}\left(x\right)+\beta V_{i}^{e}\left( x \right)
+	\label{eq:ExpU_EarlyMother}
+\end{equation}
+
+$U_{i0}^{e}\left(x\right)=u\left(c_{0}\right)+ v_{i}\left(x\right)$ is the immediate utility in $t=0$. Meanwhile $V_{i}^{e}\left( x \right)=q_{i}^{e}u\left(\bar{c}_{1}\right)+\left(1-q^{e}\right)u\left(\underline{c}_{1}\right)+\Psi_{i}\left( x \right)$ is her expected utility in $t=1$. Given that she is already a mother, there is only uncertainty in consumption at period 1.    
+
+If she decides to postpone motherhood, her lifetime expected utility is:
+
+\begin{equation}
+	U_{i}^{d}=U_{0}^{d}+\beta V_{i}^{d}
+	\label{eq:ExpU_DelayMother}
+\end{equation}
+
+Where $U_{0}^{d}=u\left(c_{0}\right)$ is her immediate utility in $t=0$. Her expected utility in $t=1$ is $V_{i}^{d}= q_{i}^{d}u\left( \bar{c}_{1} \right) + \left(1-q_{i}^{d}\right)u\left(\underline{c}_{1}\right) + \left(1-G_{i1}\left( \underline{x}_{i} \right)\right)v_{i}\left(\hat{x}_{i}\right)$. $G_{i1}\left( \underline{x}_{i} \right)$ is the probability of receiving an offer lower than $\underline{x}_{i}$, which is the minimum offer that a woman would accept in $t=1$. $\underline{x}_{i}$ is the couple such that $ v_{i}\left( \underline{x}_{i} \right)=0$. Finally, $\hat{x}_{i}=\int_{\underline{x_{i}}}zg_{i1}\left(z\right)dz$ is the expected value of an acceptable offer she could receive in $t=1$. In this case, woman $i$ is uncertain about her future consumption and her motherhood outcomes.
+
+\subsection{The optimal pregnancy decision}
+
+Declare $\Delta q_{i}\Delta c=\left(q_{i}^{d}-q_{i}^{e}\right)\left(\bar{c}_{1}-\underline{c}_{1}\right)$. Then, for a given offer $x$, a woman $i$ chooses to be a mother at $t=0$ if:
+
+	\begin{equation}
+		\left(v_{i}\left(x\right) + \beta\Psi_{i}\left( x \right)\right)-\beta\left(1-G_{i1}\left( \underline{x}_{i} \right)\right)v_{i}\left(\hat{x}_{i}\right) \geq \beta\Delta q_{i}\Delta c
+		\label{eq:PregCostBenefit}
+	\end{equation}
+	
+Equation \ref{eq:PregCostBenefit} shows the cost-benefit relationship of becoming a young mother. On the left hand side I describe the benefits of early motherhood. Benefits come from the difference between the certain motherhood utility from a child with the couple $x$, and the expected motherhood utility that she could achieve from an unknown couple in period 1. Importantly, if a woman decide to postpone motherhood she will never be a mother with probability $G_{i}\left( \underline{x}_{i} \right)$.
+
+The right hand side, $\Delta q_{i}\Delta c$, is the gain in subjective consumption due to postponing motherhood. It represents the opportunity cost of early childbearing. As shown in previous literature, teenage childbearing is associated with losses in human capital accumulation which leads to lower levels of consumption over the lifetime (\citet{KearneyLevine2012}). Thus, if a woman believes that the expected gains of motherhood are larger than the subjective loss in consumption she will prefer to become young mother rather than wait until adulthood. 
+
+In order to explain the effect of violence on women's pregnancy decisions I define the turning offer $\tilde{x}_{i}$ as the couple such that $U_{i}\left( \tilde{x}_{i} \right)^{e}=U_{i}^{d}$.
+
+\begin{prop}
+	If $G_{i1}\left( x \right)$ has full support and $b_{i}x + \Psi_{i}\left( x \right)$ is invertible, exist an offer $\tilde{x}_{i}$ such that:
+
+			\begin{equation}
+				\left(v_{i}\left(\tilde{x}_{i}\right) + \beta\Psi_{i}\left( \tilde{x}_{i} \right)\right)-\beta\left(1-G_{i1}\left( \underline{x}_{i} \right)\right)v_{i}\left(\hat{x}_{i}\right) = \beta\Delta q_{i} \Delta c
+				\label{eq:TurningOffer}
+			\end{equation} 
+	\label{prop:TurningOffer}
+
+	Therefore, a woman $i$ chooses to have a baby in period $t=0$ for every offer $x > \tilde{x}_{i}$. 
+\end{prop}
+
+For example, if $\Psi_{i}\left( x \right)=\psi x$ where $\psi \geq 0$, then:
+
+\begin{equation}
+	\tilde{x}_{i} =\frac{\beta\left(\left(1-G_{i1}\left( \underline{x}_{i} \right)\right) v_{i}\left(\hat{x}_{i}\right) + \Delta q_{i} \Delta c \right) - \left( \alpha_{i} - \kappa \right) + b_{i}\mu_{i}}{b_{i} + \beta \psi_{i}} 
+	\label{eq:x_tilde1}
+\end{equation}
+
+The first part of equation \ref{eq:x_tilde1}, $\left(1-G_{i1}\left( \underline{x}_{i} \right)\right) v_{i}\left(\hat{x}_{i}\right)$ is the expected value of the expected couple she could get in period 1, in other words, the first part represents the auction value of delaying pregnancy. The second part of the equation $\Delta q_{i}\Delta c$ represents the opportunity cost of not waiting due to the expected forgone consumption in the future.  Thereafter, $\left( \alpha_{i} - \kappa \right)$ represents the possible forgone utility if the woman never married. Finally, $b_{i}\mu_{i}$ represents the direct effect of the woman $i$ characteristics on the selection of $\tilde{x}_{i}$. These results are according to the findings of \citet{BlackburnBloomNeumark1993} and \citet{ErmischPevalin2004}.
+
+Thus, if $G_{i0}$ rules the distribution of $x$ when the woman $i$ is a teenager, the probability that she chooses early motherhood is:
+
+\begin{equation}
+	P_{i}\left(\textrm{young mother=1}\right)=P_{i}\left(x > \tilde{x} \right)=1-G_{i0}\left(\tilde{x}_{i}\right)
+	\label{eq:ProbPreg}
+\end{equation}
+
+\subsection{How does armed violence affect women's decision? \label{sec:DiscussVioOnPreg}}
+
+Equation \ref{eq:ProbPreg} helps to understand the possible mechanisms through which armed violence affects the probability of becoming a young mother. It is important to point out that this paper does not analyse the impact of gender and sexual violence in conflict.\footnote{Previous works such as \citet{Lara2008} and \citet{Pinzon2009} have studied the use and the consequences of gender violence in the Colombian conflict.One can argue that an increase in homicides is correlated with greater prevalence of sexual and gender violence. I did not find evidence of this correlation. The main reason may be the quality of the data on sexual and gender violence, and the high levels of unreported events.} As  explained in the introduction, the analysis focuses on understanding the effect of homicides on the pregnancy decisions.
+
+Declare $\vartheta_{i}$ as the level of armed violence a woman $i$ is exposed to in period $0$. Then, rewriting equation \ref{eq:ProbPreg} as $h_{i}=P\left(\textrm{young mother =1}\mid\tilde{x}_{i}\right) = 1-G_{i0}\left(\tilde{x}_{i}\right)$. Therefore, the influence of violence in the decision of woman $i$ can be written as $\rfrac{\partial h_{i}}{\partial \vartheta_{i}}=-g_{i0}\left(\tilde{x}_{i}\right)\rfrac{\partial\tilde{x}_{i}}{\partial \vartheta_{i}}.$ Given that $g_{i0}\left(\tilde{x}_{i}\right)>0,$ the analysis simplifies to understand the behaviour of  $\rfrac{\partial\tilde{x}_{i}}{\partial \vartheta_{i}}$. Therefore, in this section I discuss how violence affects the different elements that influence $\tilde{x}_{i}$ following equations \ref{eq:TurningOffer} and \ref{eq:x_tilde1}.
+
+As I claim in the introduction of this paper, violent crime affects the expectations of young women regarding their future outcomes in the marriage and labor markets. I asses the effect on the marriage market specially through changes in the sex ratio ($SR=\rfrac{\textrm{men}}{\textrm{women}}$), via recruitment of soldiers and killings.  
+
+Homicides are more prevalent in men than women. According to official reports 92\% of the total homicides are men, while only 8\% of casualties were women.\footnote{I will describe this statistics in more detail in section \ref{sec:Data}} Figure \ref{fig:D_SR}, shows the variability in the change in the sex ratios in Colombia as a result of the homicides in each municipality.  It is important to point out that no municipality shows a positive change in the sex ratio. The changes in the ratio are within a range from 0 to -16.6\%, showing large heterogeneity in the effect over different regions of the country.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.45]{SexRatioChange3.png}
+  \caption{Estimated change in the adult sex ratio due to homicides from 1990 to 2009}
+  \label{fig:D_SR}
+\end{figure}
+
+In addition, according to a survey of former soldiers from illegal armed groups in Colombia (\citet{Compes3554}), 91\% of the ex combatants are men. Almost 70\% of these men have only primary education or less. \citet{PintoBorregoLaHuerta2011} show that 82\% of the former members of the illegal armed groups joined the group when they were 10 to 17 years old.
+
+Therefore, I contend that decreases in sex ratio affect the decision of motherhood in the following ways. Firstly, when the sex ratio falls (less men) the probability of finding a couple in both periods decrease. On the one hand, if $G_{i0}$ moves to the left the probability that a woman receives an offer better than $\tilde{x}_{i}$ reduces. Following \citet{Shemyakina2009}, when the shock on male deaths is substantial, women may postpone marriage and motherhood due to the decreased availability of men in the area. On the other hand, if $G_{i1}$ moves to the left the effect is twofold. Initially, the woman $i$ expectation of receiving an acceptable couple reduces. Furthermore, if given that $\hat{x}$ is a function of $g_{i1}\left( x \right)$, the value of $\hat{x}$ reduces as well. Therefore, the auction value of postponing motherhood decreases. 
+
+In addition, the fall in the sex ratio may have other consequences that are not directly associated with $\tilde{x}_{i}$ as defined in equation \ref{eq:x_tilde1}. For example, when the sex ratio decreases, each woman has less bargaining power and the expected quality of the offer decreases (men could choose better partners). Therefore, the value of the expected couple $\hat{x}$ will reduce as well. This result follows \citet{AbramitzkyDelavandeVasconcelos2010} and \citet{ChiapporiFortinLacroix2002}. Furthermore, one can claim that losing bargaining power reduces women's autonomy over their own fertility choices. Therefore, if  men in conflict aim to have a child in order to build a memory or legacy after death, then they will push women to become mothers when young.   
+
+The second mechanism propose in this paper is the effect that violent crime can have on the expectations of future economic success.\footnote{Likewise \citet{KearneyLevine2011} and their idea of \emph{despair}.} \citet{Soares2005,Soares2013} and \citet{LorentzenEtAl2008} argue that armed conflict increases future uncertainty, and thereby reduces investment in activities like education. One can also argue that the feeling of despair, as opposed to hope, increases when violence increases around a household. What is more, \citet{RodriguezSanchez2009} show that high school drop out rates increase when violence increase in Colombia. In addition, \citet{MoyaCarter2014} find that armed conflict and traumatic experiences are linked lower expectations on upward social mobility. Therefore, I could expect that $\rfrac{\partial\Delta q_{i}\Delta c}{\partial \vartheta_{i}}<0$
+
+Table \ref{tab:Juntos} shows that violence also affects parental expectations about the benefits of education. Using data from the evaluation of the social welfare programme Red Juntos.\footnote{More information about the programme is available in the following link - \href{Red Juntos}{http://web.presidencia.gov.co/especial/juntos/index.html}} The table shows that in municipalities where the mean and the standard deviation of the homicide rate is higher, parents have lower expectations about the income of their offspring if she or he finishes university education. However, the effect is not significant when the expectations are conditional to finishing only high school. If parental expectations are lower, one can expect that teenagers living in violent environments do not recognise an expected return from an investment in education, especially post-secondary. Therefore, the expected opportunity cost of being young parents is reduced. 
+
+\begin{table}[h]
+	\caption{\\ OLS estimations of the effect of homicides on parental expectations about offspring's future income, conditional on being working and achieving a maximum level of education}
+	 \centering 
+	 \footnotesize
+	 \begin{tabular}{l C{2cm} C{2cm}}
+		\hline 
+		\multirow{2}{4cm}{{Moment of the homicide rate (1990 - 2009)}} & \multicolumn{2}{c}{{ If the offspring finishes}} \\ 
+		\cline{2-3}	
+		  & {High school} & {University} \\
+		  \hline
+		  {Standard deviation} & {-0.047 } & {-0.370***} \\
+		  & {(0.078) } & {(0.108) }  \\
+		  {Mean} & {-0.031 } & {-0.246***}  \\
+		  & {(0.052) } & {(0.072)}  \\
+		  \hline 
+		  {N} & {1258 } & {1055 } \\
+		\hline
+	  \end{tabular}
+		\begin{minipage}[t]{1\columnwidth}%
+		  \begin{spacing}{1}
+		  \noindent 
+		  {Notes: Based on the data from the welfare programme Juntos in 2011. The sample includes 77 municipalities. Standard errors clustered by municipality in parentheses. \sym{*} $p<0.1$, \sym{**} $p<0.05$, \sym{***} $p<0.01$.
+		  }
+		  \end{spacing}
+	  \end{minipage}
+	  \label{tab:Juntos}
+\end{table}
+
+Consequently, an increase in armed violence raises the value of the expected gains in the marriage market (left hand side of equation \ref{eq:PregCostBenefit}). Meanwhile, it reduces the expected premium of postponing motherhood (right hand side of equation \ref{eq:PregCostBenefit}). Therefore, $\rfrac{\partial h_{i}}{\partial \vartheta_{i}}>0$.
+
+However, there may be ways in which violence decreases the teenage pregnancy rate, thus, the final effect can be ambiguous. As I already mention, $G_{i0}$ can move to the left so less women may get acceptable offers at $t=0$, which means that the pregnancy rate falls. What is more, following \citet{AcemogluAutorLyle2004} male deaths could have a positive effect on the female labor market, thereby increasing the premium of postponing motherhood. Their analysis is based on the situation of a massive armed confrontation such as the World War II. However, \citet{SinghShemyakina2013} have shown the opposite effect during the Punjab insurgency, which is a case more similar to the Colombian case.
+
+I cannot rule out these last two options which imply a reduction in the probability of being a young mother by an increase in the level of violence.
+
+Unfortunately, the data available for this paper does not allow me to disentangle each channel. I do not have individual information about women's expectations in the labor and marriage markets. Nevertheless, my results support the notion that the negative effects on the labor and marriage market overcome the opposite effects. In summary, an increase in violence reduces the expected revenues of young women in the labor and marriage market. Teenage pregnancy therefore works as insurance when a loss in future utility is foreseen by young women.
+
+From the discussion in this section I can set some testable implications. First, increases in armed violence should affect the timing of first pregnancy of young women more than older women. I could expect that when women finish education there is no further cost in the labor market. Violence may only affect women's decision through its effect on the marriage market. Second, having the first baby already guarantees utility for motherhood and implies a cost in the labor market. A second baby may imply more utility from motherhood but at no extra cost in the labor market. Therefore, the effect of more violence on second pregnancies may be zero or negative. Finally, given that early motherhood in the model works as insurance when there is a negative shock in the expectations in the marriage and labor market; the effect of armed violence may be similar on early marriage. In this case I do not expect a strong effect on out of the wedlock childbearing.
+
+\section{Estimation strategy\label{sec:EstStr}}
+
+In this section I describe the estimation methods used to assess the effect of armed violence on the prevalence of teen motherhood in Colombia. Previously I discussed how different types of armed violence could affect the probability of being a young mother, however, this paper focuses only on the effect of homicides on teenage pregnancy. To estimate this effect I rewrite equation \ref{eq:ProbPreg} as $P_{imt}\left(\textrm{Young mother} = 1\right)=1 - G\left( \tilde{x}\left(hom_{mt},\ X_{imt}  \right)\right) = h\left(hom_{mt},\,X_{imt}\right)$, where $hom_{mt}$ is the homicide rate in municipality $m$ at period $t$. 
+
+Following \citet{Lancaster1979} and \citet{Jenkins2005}, I estimate a discrete time proportional hazard model, where $h_{ijmt}$ represents the probability that woman $i$ will become pregnant at age $j$, given she was not pregnant before age $j$, and that she is living in municipality $m$ at period $t$.\footnote{More precisely, in discrete time $hij=P\left(j-1<T\leq j\mid T>j-1\right)$. Given that the dependent variable will group all the observations in a yearly interval I use a discrete duration model. See further discussions in \citet{Jenkins2005} chapter 3.} $h_{ijmt}$ can be written as a function of the unconditional hazard rate $h_{0}\left(j\right)$ and a linear index on $X_{i}$, $hom_{mt}$ and $\varepsilon_{ijmt}$.
+
+	\begin{equation}
+		h_{ijmt}=h_{0}\left(j\right)g\left(\beta X_{i}+\gamma hom_{mt}+\varepsilon_{ijmt}\right)\label{eq:Duration}
+	\end{equation}
+
+According to the model developed in section \ref{sec:Model}, I expect that $\rfrac{\partial h}{\partial hom}=h_{0}\left(j\right)\gamma g'>0$. Therefore, assuming that violence shocks are exogenous, and $hom_{mt}$ and $g\left(hom_{mt}\right)$ are bounded, it is possible to identify $\hat{\gamma}$ and the underline hazard function $h_{0}\left(j\right)$ using standard regression methods (\citet{VanDenBerg2000}). 
+
+Subsequently, figure \ref{fig:DishDesPreg2ByHomDm100}, will suffice to demonstrate that armed violence, measure by homicide intensity, has a direct impact on the probability of becoming a mother when young. Figure \ref{fig:DishDesPreg2ByHomDm100} shows how the hazard of becoming pregnant for the first time at age $j$ is always greater for women who live in towns where the homicide rate is larger than 100. The largest difference occurs when women are 19 years old.
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.45]{1505SurDesh_preg2homDm100.png}
+		\caption{First pregnancy discrete hazard function by homicide rate category - $h_{0}\left( age = j | \textrm{homicide rate} \right)$}
+		\label{fig:DishDesPreg2ByHomDm100}
+	\end{figure}
+
+The orthogonality condition may not be credible when the variable of analysis is the violence that a household is exposed to at certain period of time. In the sense of duration models, endogeneity refers to unobservable variables that affect the level of exposure to armed violence, and the underlying hazard function of first pregnancy (\citet{Bijwaard2008}). In other words, there is an unobservable that could make some women more likely to be affected by the local violence.  Simultaneously, this affects their probability of becoming pregnant at a certain age. Then, if $hom_{mt}\not\perp\varepsilon_{ijmt}$ I could expect that $hom_{mt}\not\perp h_{0}\left(j\right)$, thus I cannot identify $\gamma$ using a proportional hazard model.
+
+In Colombia, the differential effect of long lasting violence could be correlated with different institutions, the low presence of the state and risk aversion profiles of the community. The latest list of variables can also explain the differences in the fertility profiles between different regions. For this reason, this work proposes an instrumental variable strategy. 
+
+\subsection{Instrumenting the homicide rate using the internal cocaine trafficking network}
+
+To estimate exogenous variation in the homicide rate at municipality level, I use the variation in international cocaine prices and its interaction with the potential cocaine trafficking network. The internal cocaine trafficking network links municipalities where coca bushes are cropped to municipalities on the Colombian border using the road's network. Therefore, the network includes every single municipality that could be used by Colombian drug dealers to transport cocaine from the crops to the ports.\footnote{Details of the network are in \citet{Millan2014Trafficking}} 
+
+The strategy uses time variation from changes in yearly cocaine prices in the United States (US) and Europe.  To get regional variation I exploit the fact that different regions in Colombia have comparative advantage to serve different international markets. Consequently, the effect of changes in each international price is heterogeneous across Colombian municipalities.   
+
+The World Drug Report in 2011 (\citet{UNODC20002012}) discusses the main international cocaine trafficking routes from South American Andean countries (Colombia, Peru and Bolivia). Accordingly, cocaine sold in the American market leaves Colombia from the Pacific coast to reach the south of Mexico and then the southern border of the US. The second route leaves Colombia from the Atlantic border to reach either Mexico or the South of Florida by ships over the Caribbean Sea. To reach Europe, cocaine exits Colombia either from the Atlantic border or from the border with Venezuela. On the one hand,  when cocaine is shipped from the Atlantic, it travels through the Atlantic Ocean to reach the border of Portugal or Spain. On the other hand, when cocaine leaves from the border with Venezuela it travels to the plains of the south of Venezuela to reach the Atlantic Ocean, where it then reaches West Africa and is shipped to the South of Europe. 
+
+In that sense, one can expect that when the price of cocaine increases in the US violence in Colombian municipalities connected with the traffic going to the Pacific or Atlantic will rises. When the cocaine price increases in Europe competition in the municipalities linked with the Atlantic coast or the Venezuelan border is harder and the violence between drug dealers will rise. Therefore, changes in prices allow me to estimate changes in violence over the time while different parts of the cocaine trafficking allow to capture regional differential shock when the cocaine prices change in US and Europe.
+
+Identification relies on the following features of the cocaine market: First, drug dealers compete in local oligopoly markets.  According to \citet{Echandia2013} after the killing or incarceration of the drug lords in the early 1990's the Colombian market divided in small regional markets where smaller drug dealers compete now for regional control.
+
+Second, in illegal markets firms (gangs) compete using violence rather than prices or quantities. \citet{Kugler2005} and \citet{Fiorentini1995} also showed that when the expected profits increase competition is harder and violence increases. When the expected profit rises incumbent firms may use violence to deter entry of new competitors (who may use violence as a way to enter in the market), or firms may increase violence in order to gain a larger portion of the total profits.
+
+Third, to avoid inverse causality, Colombian drug dealers should not be able to set prices in the consumption regions. The fact that Colombian drug dealers face internal regional competition reduces their power in the international market. Furthermore, final prices in Europe and US also include as well the costs and mark ups of each intermediary. By 2008,the profit of  Colombian traffickers constituted about a tenth of the gross profits made by traffickers in American.\footnote{According to the World Drug Report in 2010, in 2008 the gross profits of Colombian traffickers who sold cocaine in Mexico were around 2.4 billion dollars. The Mexican groups' profits were about 2.9 billion and the gross profit of American drug traffickers were about 24 billion dollars - \citet{UNODC20002012}} This evidence shows the market power that American drug dealers exert over Colombian drug dealers. This is also evidence of the limited power of individual Colombian gangs to affect the final price of cocaine.
+
+Nevertheless, by 2001 Colombia supplied 80\% of total cocaine on the world, thus I need to control for national supply shocks that affect the international price. To do so I control for the price of cocaine in the cities of Colombia. This price represents the reservation price for internal traffickers and it will response as well to changes in the supply.  Once I control for the price of cocaine in Colombia the variation in international prices will only be driven by demand shocks.
+
+Fourth, drug trafficking only affect households decision through the violence drug dealers exert of certain municipalities. Given that I include all the transit points it is likely that traffickers do not live in the towns they cross. Moreover, \citet{Millan2014Trafficking} shows that trafficking does not explain changes in local taxation. Therefore, changes in the cocaine price are not changing consumption patterns in the trafficking municipalities. % I will cite myself here as well. 
+
+Consequently, I define $P_{\iota t}$ as the wholesale price of cocaine at market $\iota = \left\{ \textrm{United States, Europe} \right\}$ at year $t$. To control for common supply shock that may affect the international prices of cocaine, I subtract the price of cocaine in the Colombian cities to each international price. $D_{mf} = 1\left[m \in f  \right]$, is a dummy that is equal to 1 if the municipality $m$ belongs to the trafficking cluster $f$. The cocaine trafficking network is divided in four cocaine trafficking clusters according to the frontier each cocaine trafficking route finishes on: $f = \left\{ \textrm{Pacific, Atlantic, Venezuela North, Venezuela South} \right\}$. Then, a municipality $m \in f$ if it is crossed by a route that finishes at frontier $f$.
+
+In order to capture the effect of cocaine trafficking on violence at the municipality level, I define $DD_{mt}$ as the influence of the potential drug trafficking over municipality $m$ in year $t$. Then:
+
+\begin{equation}
+	DD_{mt} = \sum_{\iota} \sum_{f}{\alpha_{\iota f}P_{\iota}D_{mf}}
+	\label{eq:DrugTrafickingDef}
+\end{equation}
+
+Then I expect that $\alpha_{US,\textrm{ Pacific}} > 0$ and $\alpha_{EU,\textrm{ Venezuela South}} > 0$. However, for the municipalities trafficking through the Atlantic border and the North Venezuelan border the effect of the prices in the US and Europe is not clear because the could be serving both markets. 
+
+\subsection{Instrumental variables for a discrete duration estimation}
+
+Following the discussion above, I assume that  $DD_{mt}\perp\varepsilon_{ijmt}$, therefore $DD_{mt}\perp h_{0}\left(j\right)$. In order to estimate $\gamma$, I write the proportional hazard model of equation \ref{eq:Duration} as a linear indicator function:\footnote{$T$ and $M$ represent the year fixed effects and municipality fixed effects}
+
+	\begin{equation}
+		preg_{ijmt}=1\left[h_{0}\left(j\right)+\gamma hom_{ijmt}+X_{i}+T+M+\varepsilon_{ijmt}>0\right]\label{eq:Duration_Identification1}
+	\end{equation}
+
+If $\Psi$ is the $cdf$ of the error term $-\varepsilon_{ijmt}$, I rewrite the latest equation as:
+
+	\begin{equation}
+	  preg_{ijmt}=\Psi\left(h_{0}\left(j\right)+\gamma hom_{ijmt}+X_{i}+T+M\right)\label{eq:Duration_Identification2}
+	\end{equation}
+
+As I discussed previously, $hom_{mt}\not\perp\varepsilon_{ijmt}$ so $hom_{mt}\not\perp h_{0}\left(j\right)$. If I define $hom_{ijmt}$ as: 
+
+	\begin{equation}
+		hom_{ijmt} = DD_{mt}+h_{0}\left(j\right)+X_{i}+T+M+\mu_{ijmt}\label{eq:Duration_Identification3}
+	\end{equation}
+
+Following \citet{BlundellPowell2004}, $\varepsilon$ and $\mu$ have joint probability distribution such that $\varepsilon_{ijmt}=\pi\left(\mu_{ijmt}\right)+\omega_{ijmt}$, where $\omega$ has a $cdf$ defined by the function $\Lambda$.  Replacing $\varepsilon$ in equation \ref{eq:Duration_Identification1} using $\Lambda$ I rewrite the equation of first pregnancy as: 
+ 
+	\begin{equation}
+		preg_{ijmt}=\Lambda\left(h_{0}\left(j\right)+\gamma hom_{ijmt}+\pi\left(\mu_{ijmt}\right)+X_{i}+T+M\right)\label{eq:Duration_Idetification4}
+	\end{equation}
+
+Identification relies on the distributional assumption on $\Pi$ which will determine the distribution of $\omega$. For example, assuming joint normality I can rewrite $\varepsilon$ as a linear function of $\mu$ and $\Lambda$ would be a normal function. \footnote{For instance, \citet{Lillard1993} assumes joint normality between the probability of dissolve marriage and pregnancy inside marriage. This allows him to estimate the parameters of the function $\Pi$. Furthermore, \citet{BlundellPowell2004} assume also normality to estimate the income effect on labor market participation.} For this reason, I estimate the discrete duration model (equation \ref{eq:Duration_Idetification4}) using different functional forms for $\pi\left(\mu\right)$ and $\omega$.  
+
+\section{The Data\label{sec:Data}}
+
+For the estimations of this paper I use three different types of data.  First, individual data about women pregnancy outcomes from the Colombian Demographic and Health Survey \emph{(DHS)} from 2000 to 2010.  The data includes 3 cross section cohorts (2000, 2005 and 2010) of women from 13 to 49 years old from 358 municipalities in Colombia.\footnote{The DHS data is available from 1995. However, some important variables of this analysis were not available before the 2000 survey. Colombia has 1110 municipalities in total.} Table \ref{tab:IndividualDescriptivesDHS} in \ref{App:SupTables} summarises the main individuals characteristics of the sample of analysis. The sample adds up to 106405 women where 23\% are adolescents (from 13 to 19 years old). 
+
+In this section I focus the analysis on the second panel of table \ref{tab:IndividualDescriptivesDHS} which contains the main statistics of the core outcome variables in my estimations. Accordingly, the average age of first intercourse, subject to having had intercourse, is 18 years old. First pregnancies occur on average around 19 years old and first marriage around 20. Nevertheless, to have a better view of the outcome variables I use figure \ref{fig:DisSurDesByAll}. Panel a shows the failure function and panel b shows the hazard function of first intercourse, pregnancy and marriage following \citet{Jenkins2005}. According to panel a, at the age of 19 almost 80\% of our sample have  already had their first intercourse while 40\% and 35\% have already been pregnant or married for the first time. Panel b shows that the peak for the hazard of first intercourse is at 18 years old. However, the hazard functions for pregnancy and marriage almost constant from the age of 19 onwards.
+
+\begin{figure}[h]
+  \centering
+  \subfigure[Cumulative failure function - $F\left( j \right)$]{
+	  \includegraphics[scale=0.45]{1505SurDes_F_All.png}}
+  \subfigure[Hazard function - $h\left( j \right)$]{
+	  \includegraphics[scale=0.45]{1505SurDes_h_All.png}}
+  \begin{minipage}[t]{1\columnwidth}%
+		  \begin{spacing}{1}
+			  \noindent{\footnotesize{}Notes: The estimation does not include individuals who migrate town at some point after turning 13 years old.}
+		  \end{spacing}
+	  \end{minipage}
+  \caption{Estimated discrete failure and hazard functions for first intercourse, pregnancy and marriage.}
+  \label{fig:DisSurDesByAll}
+\end{figure}
+
+The second data set for the analysis is the information of homicides at the municipality level in Colombia. I use a panel of yearly homicides from 1990 to 2009 using information for the National Vital Statistics from DANE.\footnote{Departamento Administrativo Nacional de Estad\'istica is the Colombian national statistics bureau.}  Figure \ref{fig:AnnualHomicideRateTotalvsDHS} show the evolution of the total homicide rate for the entire country and the municipalities in the DHS sample. Both series only show some differences until 1997. Both series reach the maximum in 1992 and have a decreasing tendency until 1997. Then homicides increased again until 2002. After 2002, rates dropped  until 2008. 
+
+\begin{figure}[h]
+  \centering
+	\includegraphics[scale=0.45]{1308homRateAnnualTotalvsDHS.png}
+  \caption{Annual homicide rate. Total vs DHS sample}
+  \label{fig:AnnualHomicideRateTotalvsDHS}
+  \end{figure}
+
+Table \ref{tab:HomicideDescriptivesDHS} summarises different features of the homicide rate for  343 municipalities of the DHS sample.  It is important to point out that the  Colombian average homicide rate is considerably larger than in developed countries like the United Kingdom and United State where the current rates are 1 and 5 respectively. What is more, even after 2005 when the rates decrease, the total value remains larger than the Mexican historical maximum rate of 23 homicides per 100 thousand habitants in 2011. %%% Check this AGAIN.
+
+\begin{table}[h]
+	\caption{\\ Homicide rates by age and gender - Descriptive statistics for the municipalities in the DHS sample}	
+	\footnotesize
+	\centering
+\begin{tabular}{l cccc}
+\hline
+            Variable&        mean&          sd&         min&         max\\
+\hline
+\multicolumn{5}{l}{{\emph{Total homicide rate}}}  \\
+Total &       55.04&       58.23&           0&         561\\
+\ Less than 4 y.o.&        2.01&       10.87&           0&         407\\
+\ 5 to 14 y.o.&        3.01&       10.11&           0&         362\\
+\ 15 to 44 y.o.&       96.49&      107.23&           0&        1076\\
+\ 45 to 64 y.o.&       59.32&       79.14&           0&        1145\\
+\ More than 65 y.o.&       26.46&       59.35&           0&        1015\\
+Within municipality s.d. (Total)\sym{*}&       31.92&       26.62&           0&         157\\ \hline
+\multicolumn{5}{l}{{\emph{Male homicide rate}}}  \\
+Total &      100.32&      106.28&           0&         957\\
+\ Less than 4 y.o.&        2.02&       13.24&           0&         352\\
+\ 5 to 14 y.o.&        4.07&       16.77&           0&         685\\
+\ 15 to 44 y.o.&      178.01&      198.05&           0&        2022\\
+\ 45 to 64 y.o.&      107.47&      141.38&           0&        1471\\
+\ More than 65 y.o.&       47.26&      109.69&           0&        1887\\
+Within municipality s.d. (Total)&       58.74&       48.14&           0&         281\\ \hline
+\multicolumn{5}{l}{{\emph{Female homicide rate}}}  \\
+Total&        8.97&       14.12&           0&         218\\
+\ Less than 4 y.o.&        2.00&       16.64&           0&         820\\
+\ 5 to 14 y.o.&        1.91&        9.69&           0&         249\\
+\ 15 to 44 y.o.&       14.30&       25.39&           0&         353\\
+\ 45 to 64 y.o.&        9.72&       33.03&           0&         758\\
+\ More than 65 y.o.&        5.80&       33.37&           0&         712\\
+Within municipality s.d. (Total)&       9.56&        8.03&           0&          64\\ \hline
+\multicolumn{5}{l}{{\emph{Male homicide proportion}\sym{**}}}  \\
+Total   &        0.92&        0.13&           0&           1\\
+\ Less than 4 y.o.   &        0.56&        0.46&           0&           1\\
+\ 5 to 14 y.o.&        0.68&        0.41&           0&           1\\
+\ 15 to 44 y.o.&        0.92&        0.13&           0&           1\\
+\ 45 to 64 y.o.&        0.92&        0.18&           0&           1\\
+\ More than 65 y.o.&        0.87&        0.28&           0&           1\\
+\hline
+\end{tabular}
+\begin{minipage}[t]{1\columnwidth}%
+		  \begin{spacing}{1}
+			  \noindent {\footnotesize{}
+				  Notes: Author calculations. \\ 
+				  \sym{*} The within municipality s.d. is the average standard deviation of each municipality in the sample from 1990 to 2009. \\
+				  \sym{**} The male homicide proportion is  $\rfrac{\textrm{Male homicides}}{\textrm{Total homicides}}$
+			  }
+		  \end{spacing}
+	  \end{minipage}
+\label{tab:HomicideDescriptivesDHS}
+\end{table}
+
+There are three key features in table \ref{tab:HomicideDescriptivesDHS} that are important to mention. First, independent of gender the homicide rates are considerably larger for people from 14 to 44 years old. The average rate at this age is 96.5. This is more than twice the rate from 45 to 64 and 32 times the rate for children from 5 to 14 years old. These proportions are similar for both men and women. Second, male homicides are on average 10 times more frequent than women homicide. Men's rate is 100 homicides while women's rate is 8.97. Furthermore, male homicides represent 92\% of the total homicides. Third, large variations exists between different municipalities. The average within municipality standard deviation is 31.9 with a range from 0 to 157. This last fact shows that homicides' dynamics vary across regions.  
+
+The last data set used for this paper is the information about cocaine trafficking in Colombia from \citet{Millan2014Trafficking}. On the one hand, geographical variation in the instrument comes from the division of the total trafficking network according to the border each municipality is linked with. Figure \ref{fig:DDClustersDHS} shows the municipalities that belong to each trafficking cluster. In black the municipalities that are also part of the DHS sample.  
+
+\begin{figure*}[t]
+  \centering
+  \subfigure[Pacific]{
+	  \includegraphics[scale=0.30]{10201505DDClusterPacificDHS.png}}
+  \subfigure[Atlantic]{
+	  \includegraphics[scale=0.30]{10201505DDClusterAtlanticDHS.png}}
+  \subfigure[Venezuela North]{
+	  \includegraphics[scale=0.30]{10201505DDClusterVenNorthDHS.png}}
+  \subfigure[Venezuela South]{
+	  \includegraphics[scale=0.30]{10201505DDClusterVenSouthDHS.png}}
+  \subfigure[Outside the trafficking network]{
+	  \includegraphics[scale=0.30]{10201505NoTrafDHS.png}}
+  \begin{minipage}[t]{2\columnwidth}%
+		  \begin{spacing}{1}
+			  \noindent{\footnotesize{}Legend: \\
+				  \ \crule{2mm}{2mm} In the cluster and DHS sample. \\
+				  \ \crule[black!50!white!100]{2mm}{2mm} In the cluster but not in the DHS sample. \\
+				  Notes: Based on \citet{Millan2014Trafficking}. The trafficking routes have a maximum length of 1020 km}
+		  \end{spacing}
+	  \end{minipage}
+  \caption{Municipalities in each cocaine trafficking cluster}
+  \label{fig:DDClustersDHS}
+\end{figure*}
+
+On the other hand, time variation is due to changes in the prices of cocaine in different international markets. Figure \ref{fig:CocaineWSPrices} shows the evolution of cocaine wholesale prices in the United States, Europe and Colombia.\footnote{The price of Europe is a weighted average of the prices in Austria, Belgium, Denmark, Finland, France, Germany, Greece, Ireland, Italy, Luxembourg, Netherlands, Norway, Portugal, Spain, Sweden, Switzerland and United Kingdom.} Despite some common features in the trend of the three prices, there are some differences in the price evolution between the two main consuming regions. Therefore, the interaction between each international price and each cocaine trafficking cluster allows me to estimate different exogenous shocks in the level of homicides on different municipalities.  
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.45]{1505cocaineIntVsColPrice.png}
+	 \begin{minipage}[t]{2\columnwidth}%
+		  \begin{spacing}{1}
+			  \noindent {\footnotesize{}Source: UNODC. All prices in 2009 USD corrected by purity.}
+		  \end{spacing}
+	  \end{minipage}
+	\caption{Wholesale international prices of cocaine - USD per gram}
+	\label{fig:CocaineWSPrices}
+\end{figure}
+
+The descriptive statistics of the municipality level control variables are in the table \ref{tab:MunControlDesc} in \ref{App:SupTables}.
+
+\subsection{Data preparation and restrictions} 
+
+I transform the data to the shape of a survival panel following \citet{Jenkins2005}. Using the information of age, municipality of residence and age at first pregnancy I declare for a woman $i$ living in municipality $m$ at year $t$:
+
+\begin{equation}
+	preg_{ijmt} = \left\{
+		\begin{array}{ll}
+		   0	& \text{if never been pregnant at age } j \\
+		   1	& \text{if pregnant for the first time at age } j \\
+		   .	& \text{if has already been pregnant before age } j \\
+	   \end{array}	
+		\right.
+	\label{eq:preg}
+\end{equation}
+
+I constraint the sample for women of 13 years old and older. It is important to point out that the observations of a given individual are right censored if she has never been pregnant at the time of the interview. In addition, left censoring occurs when a woman turned 13 before 1990 and was not pregnant the first year we observe her. I control for both censoring cases in all estimations.
+
+Afterwards, using the municipality of residence $m$ and year $t$ to merge the data a municipality level, specially the homicide rate $hom_{mt}$. This use of the data has two major problems. 
+
+First, if a woman changed municipality of residence at some point over the period of analysis I am not able to link her personal data with the data of the armed violence she faced in the origin municipality. For that reason, for the analysis of pregnancy between age $\underline{j}$ and $\bar{j}$ I exclude women that migrated at some point between the range of the estimations. Migration implies different sources of bias that I am not able to control for. On the one hand, to migrate is a strategy households could use to escape violent conflict. Thus, women who do not migrate may have different preferences for motherhood given that moving or motherhood may be two substitute strategies against conflict.  In this case, my estimates will be upper biased. On the other hand, pregnancy may have been the reason that triggered the migration decision. Therefore, migration and pregnancy are complementary strategies and my estimate will be lower biased. The effect of migration is without doubt a very interesting and challenging problem for future research.
+
+Second, for each individual I only have information at one period in time. Therefore, I cannot control for changes in some variables that may be affecting the pregnancy decision. For this reason, in the set of individual controls I only include variables that do not change in time. I leave the ones that are time variant in the error term. It is important for identification that these variables will not be correlated with my instrument. These variables could be for example education and labor market participation. The time variation of these two variables is not correlated with the time variation of cocaine prices which rules the time variation of the instrumental variable in this paper. 
+
+\section{Results\label{sec:Result}}
+
+For the estimations of the impact of homicides on the hazard of early pregnancy, I assume that $\Psi$ and $\Lambda$ have a logistic shape and  $h_{0}\left(j\right)=Ln\left( j \right)$.\footnote{The results using different specifications for $\Psi$ and $\Lambda$ are in \ref{App:FunctForm}.} Therefore, I can estimate equation \ref{eq:Duration_Identification2} using a logit function on $preg_{ijmt}$ as defined in equation \ref{eq:preg}. I also always use standardised homicide rates in the estimations. Table \ref{tab:OLSDuration_homRate} summarises the resulting estimates of a discrete duration logistic model for different age spells.
+
+\begin{table}[h]
+	\caption{\\ Homicide rates on the hazard of first pregnancy. Discrete logistic  duration model.}	
+	\footnotesize
+	\begin{tabular}{lccccc}
+		\hline
+		& \multicolumn{5}{c}{{Age range}} \\  
+					&	13-19&	 13-17&	15-19& 20-24& 25-29 \\ \hline
+		Homicides	&       0.004\sym{**} &	       0.000         &	       0.005\sym{**} &	       0.005         &	       0.005         \\
+	&     (0.002)         &	     (0.002)         &	     (0.002)         &	     (0.005)         &	     (0.008)         \\
+					
+	$h_{0}(j)$	&       0.066\sym{***}&	       0.055\sym{***}&	       0.057\sym{***}&	       0.003         &	      -0.004\sym{**} \\
+	&     (0.002)         &	     (0.002)         &	     (0.002)         &	     (0.003)         &	     (0.002)         \\
+					
+Constant	&      -0.201\sym{**} &	      -0.043         &	      -0.037         &	      -0.378\sym{*}  &	       1.526\sym{***}\\
+	&     (0.096)         &	     (0.113)         &	     (0.177)         &	     (0.198)         &	     (0.433)         \\
+\hline					
+$R^{2}$	&        0.05         &	        0.04         &	        0.04         &	        0.03         &	        0.03         \\	 \hline
+	\end{tabular}
+	\begin{minipage}[t]{1\columnwidth}%
+		  \begin{spacing}{1}
+		  \noindent 
+		  {Notes: All the estimations control for all the variables described in tables \ref{tab:IndividualDescriptivesDHS} and \ref{tab:MunControlDesc}. Also include year, birth cohort, household income quartile and municipality fixed effects. Standard errors clustered by Department in parentheses - 33 clusters. \sym{*} $p<0.1$, \sym{**} $p<0.05$, \sym{***} $p<0.01$.
+		  }
+		  \end{spacing}
+	  \end{minipage}
+
+	\label{tab:OLSDuration_homRate}
+\end{table}
+
+Table \ref{tab:OLSDuration_homRate} shows a significant and positive correlation between the homicide rate and the hazard of becoming pregnant for teenagers (13 to 19 or 15 to 19). The effect of homicides reduces for older groups. These results are like the ones shown in figure \ref{fig:DishDesPreg2ByHomDm100}. Moreover, table \ref{tab:OLSDuration_homRate} and figure \ref{fig:DishDesPreg2ByHomDm100} show that the effect of homicides is small and not statistically significant for the younger women of the sample (13-17). Therefore, from now on I estimate the duration model using groups of 5 years starting at age 15.
+
+This is not a causal effect as the orthogonality condition - $hom_{ijmt}\bot\varepsilon_{ijmt}\mid j$ and $h\left(j\right)\bot\varepsilon_{ijmt}$ does not hold for the reasons previously discussed in section \ref{sec:EstStr}. Thus, I follow the two stage estimation following equations \ref{eq:Duration_Identification3} and \ref{eq:Duration_Idetification4}. Accordingly, table \ref{tab:preg2onhomRate_fsDD1020} shows the results for the estimation of equation \ref{eq:Duration_Identification3} over the sample of DHS municipalities and individuals of different age groups.\footnote{Due to sample composition, some results in this paper differ marginally from the main results of \citet{Millan2014Trafficking}.  However, the main relationships hold. What is more, the results are homogeneous among age groups.}
+
+\begin{table}[h]
+	\caption{\\ First stage estimations. Cocaine trafficking on Homicide rates.}	
+	\footnotesize
+	\begin{tabular}{llcccc}
+		\hline
+		&	& \multicolumn{4}{c}{{Age range}} \\  
+		$P_{\iota}$&	$D_{f}$&	13-19&	15-19& 20-24& 25-29 \\ 
+			& & (1)& (2)& (3)& (4) \\ \hline
+		$US$& Pacific	&       1.523\sym{***}&	       1.532\sym{***}&	       1.469\sym{***}&	       1.395\sym{***}\\
+&	&     (0.360)         &	     (0.378)         &	     (0.325)         &	     (0.271)         \\
+				
+& Atlantic	&       1.313\sym{***}&	       1.325\sym{***}&	       1.520\sym{***}&	       1.321\sym{***}\\
+&	&     (0.316)         &	     (0.320)         &	     (0.285)         &	     (0.271)         \\
+				
+& Ven. North&       0.039         &	       0.078         &	       0.157         &	       0.467         \\
+&	&     (0.358)         &	     (0.371)         &	     (0.373)         &	     (0.435)         \\
+				
+& Ven. South&	       0.287         &	       0.251         &	       0.326         &	       0.113         \\
+&	&     (0.383)         &	     (0.392)         &	     (0.399)         &	     (0.492)         \\
+				
+$Europe$& Pacific	&       0.393         &	       0.376         &	       0.357         &	       0.251         \\
+&	&     (0.474)         &	     (0.455)         &	     (0.422)         &	     (0.340)         \\
+				
+& Atlantic&       0.761\sym{**} &	       0.792\sym{**} &	       0.635\sym{**} &	       1.002\sym{***}\\
+&	&     (0.306)         &	     (0.321)         &	     (0.278)         &	     (0.270)         \\
+				
+& Ven. North	&      -0.592         &	      -0.613         &	      -0.454         &	      -0.670         \\
+&	&     (0.395)         &	     (0.396)         &	     (0.424)         &	     (0.396)         \\
+				
+& Ven. South&	      0.679\sym{*}  &	       0.724\sym{**} &	       0.495         &	       0.618\sym{*}  \\
+&	&     (0.356)         &	     (0.351)         &	     (0.327)         &	     (0.334)         \\
+\hline				
+$F$ $Test$&	&       23.58         &	       24.58         &	       13.04         &	        7.59         \\
+$R^{2}$&	&        0.71         &	        0.72         &	        0.75         &	        0.78         \\
+\hline
+	\end{tabular}
+	\begin{minipage}[t]{1\columnwidth}%
+		  \begin{spacing}{1}
+		  \noindent 
+		  {Notes: \emph{Idem}}
+		  \end{spacing}
+	  \end{minipage}
+	\label{tab:preg2onhomRate_fsDD1020}
+\end{table}
+
+The zones of Colombia that seem to be connected with the American market are the Pacific and the Atlantic. Meanwhile, the southern part of the Colombian border with Venezuela and the Atlantic coast  are the regions linked with the European market. It is important to point out that the Atlantic coast is the region of Colombia which seems to be use to serve both international markets. Finally, the joint significance test over $DD_{mt}$ is larger than 10 in almost all estimations. The statistic falls below 10 in the estimations for women from 25 to 29 years old because the sample size reduces. In this last case the sample only includes women that have not been pregnant before turning 25 years old. According to figure \ref{fig:DisSurDesByAll} less than 40\% of the sample remains without pregnancy after the age of 25.    
+
+\begin{table}[h]
+	\caption{\\ Second stage estimations. Homicide rates on the hazard of first pregnancy. Instrumented with cocaine trafficking.}	
+	\footnotesize
+	\begin{tabular}{L{2.5cm} cccc}
+		\hline
+		& \multicolumn{4}{c}{{Age range}} \\  
+			&	13-19&	15-19& 20-24& 25-29 \\ 
+			& (1)& (2)& (3)& (4) \\ \hline
+			Homicides	&       0.090\sym{***}&	       0.079\sym{**} &	       0.097         &	       0.027         \\
+	&     (0.033)         &	     (0.036)         &	     (0.061)         &	     (0.099)         \\
+				
+$h_{0}(j)$	&       1.804\sym{***}&	       0.847\sym{***}&	       0.031         &	      -0.037\sym{**} \\
+	&     (0.032)         &	     (0.033)         &	     (0.030)         &	     (0.018)         \\
+				
+Constant	&     -10.470\sym{***}&	      -7.617\sym{***}&	      -5.773\sym{***}&	       9.009\sym{**} \\
+	&     (1.695)         &	     (1.802)         &	     (2.059)         &	     (3.854)         \\
+\hline				
+$\Delta F\left(\underline{j}, \ \bar{j}\right)^{\dagger}$ 	&        2.55\sym{***}         &	        2.15\sym{**}         &	        3.00         &	        0.80         \\
+	&        [0.94]         &	        [1.01]         &	        [1.90]         &	        [2.99]         \\ \hline
+	\multicolumn{5}{l}{{Joint significance $^{\ddagger}$}} \\
+Instrument: $DD_{mt}$ 	&       23.58         &	       24.58         &	       13.04         &	        7.59         \\
+Control function: $\pi\left( \mu \right)$ 	&       12.49         &	       28.92         &	       23.04         &	       60.28         \\ \hline
+$R^{2}$	&        0.13         &	        0.07         &	        0.05         &	        0.04         \\
+Individuals	&       40405         &	       36162         &	       19403         &	        9324         \\
+N	&      182543         &	      122853         &	       60547         &	       29485         \\ \hline
+	\end{tabular}
+	\begin{minipage}[t]{1\columnwidth}%
+		  \begin{spacing}{1}
+		  \noindent 
+		  {Notes: All the estimations control for all the variables described in tables \ref{tab:IndividualDescriptivesDHS} and \ref{tab:MunControlDesc}. The estimations also include year, birth cohort, household income quartile and municipality fixed effects. Standard errors clustered by Department in parentheses - 33 clusters. \sym{*} $p<0.1$, \sym{**} $p<0.05$, \sym{***} $p<0.01$. \\
+			 $^{\dagger}$ Standard errors computed using the Delta method in square brackets [ ]. \\
+			 $^{\ddagger}$ Joint significance F Test. The instrument is $DD_{mt}$ as defined in equation \ref{eq:DrugTrafickingDef}. The control function is $\pi\left( \mu \right) = \sum_{n=1}^{3}\eta_{n}\mu^{n}$.} 		 
+		  \end{spacing}
+	  \end{minipage}
+	\label{tab:preg2onhomRate_ssfromDD1020}
+\end{table}
+
+At last, table \ref{tab:preg2onhomRate_ssfromDD1020} shows the second stage results of the impact of homicides on the hazard of first pregnancies. The table shows the resulting estimates over different age groups. One standard deviation increases the hazard of being pregnant in the teenage years by 0.09. It is important to recall that the logistic functional form in a discrete duration model identifies the proportional odd ratio. Then, for a given age $j$ and a vector of observables $X$ I can define the odds as function of homicides as $\rho\left(hom|\, j,\, X\right)=\rfrac{h\left(j,\, hom,\, X\right)}{1-h\left(j,\, hom,\, X\right)}$. Then, for two different values of the homicide rate $\left(hom_{1},\, hom_{2}\right)$, $\rfrac{\rho\left(hom_{1}|\, j,\, X\right)}{\rho\left(hom_{2}|\, j,\, X\right)}=e^{\hat{\gamma}\left(hom_{1}-hom_{2}\right)}$. Given that in the estimation the homicide rate is standardised, the effect of one standard deviation of the homicide rate on the odd ratio of being pregnant at certain age is $e^{\hat{\gamma}}$.  
+
+Using the shape of $h$, and to make the understanding of the results easier, I construct the cumulative probability of getting pregnant in the age range of analysis. Then the cumulative failure function $F\left(\underline{j},\,\bar{j},\, hom\right)=1-\prod_{x=\underline{j}}^{\bar{j}}h\left(x,\, hom\right)$. The lower panel of table \ref{tab:preg2onhomRate_ssfromDD1020} reports $\Delta F\left(\underline{j}, \ \bar{j}\right)=F\left(\underline{j}, \ \bar{j} \ | \ hom=1 \right)-F\left(\underline{j}, \ \bar{j} \ | \ hom=0\right)$. Then, $\Delta F\left(\underline{j}, \ \bar{j}\right)$ represents the effect in percentage points (pp) of one standard deviation increase in the homicides on the probability of being pregnant in certain age range. 
+
+Hence, one standard deviation increase in the homicide rate increases by 2.55 pp the probability of being pregnant between 13 to 19 years old. Column 2 in table \ref{tab:preg2onhomRate_ssfromDD1020} shows that the effect is 2.15 for women from 15 to 19. The effect of homicides on the cumulative probability of pregnancy remain positive for older cohorts, however, this effect is only statistically significant for teenage women. 
+
+\subsection{Exploring possible mechanisms}
+
+According to the discussion in section \ref{sec:DiscussVioOnPreg} this paper claims that armed violence changes the expectations of young women in the labor and marriage markets. Unfortunately I do not have information about women's expected returns in these markets. However, I use alternative estimations to give information about possible mechanisms.
+
+\begin{table*}[hbt]
+	\caption{\\ Second stage estimations. Homicide rates on the hazard of different events for women from 15 to 19 years old. Instrumented with cocaine trafficking.}	
+	\footnotesize
+	\begin{tabular}{L{3.5cm} C{2cm} C{2cm} C{2cm} C{2cm}  C{2cm} C{2cm}}
+		\hline
+		& \multicolumn{6}{c}{{Hazard: }} \\ 
+		& \multicolumn{3}{c}{{First}} & Second&  \multicolumn{2}{c}{{First$^{\diamond}$}} \\
+		\cline{2-4} \cline{6-7}	
+		&	Pregnancy&	Intercourse& Marriage&   pregnancy$^{\circ}$ & Pregnancy& Marriage \\ \hline
+       &                  (1)& (2)& (3)& (4)& (5)& (6) \\ \hline					
+Homicides        &       0.079\sym{**} &	      -0.194\sym{***}&	       0.108\sym{***}&	      -0.135         &	       0.552\sym{***}&	       0.339\sym{***}\\
+            &     (0.036)         &	     (0.031)         &	     (0.033)         &	     (0.090)         &	     (0.116)         &	     (0.060)         \\
+					
+$h_{0}(j)$        &       0.847\sym{***}&	       0.589\sym{***}&	       0.743\sym{***}&	       0.288\sym{***}&	       0.262\sym{***}&	      -0.113\sym{***}\\
+            &     (0.033)         &	     (0.027)         &	     (0.035)         &	     (0.059)         &	     (0.050)         &	     (0.037)         \\
+					
+Constant      &      -7.617\sym{***}&	      -3.010         &	     -12.631\sym{***}&	     -18.189\sym{***}&	      -2.489         &	     -13.139\sym{*}  \\
+            &     (1.802)         &	     (2.794)         &	     (1.955)         &	     (4.665)         &	     (5.479)         &	     (7.247)         \\
+\hline					
+$\Delta F\left(\underline{j}, \ \bar{j}\right)^{\dagger}$      &        2.15\sym{**}         &	       -5.90\sym{***}         &	        2.52\sym{***}         &	       -4.12         &	        2.39\sym{***}         &	        6.39\sym{***}         \\
+        &        [1.01]         &	        [0.94]   &	        [0.81]       &	        [2.72]       &	        [0.18]       &	        [0.86]         \\
+		\hline
+		\multicolumn{7}{l}{{Joint significance $^{\ddagger}$}} \\
+\ Instrument: $DD_{mt}$     &       24.58         &	       28.74         &	       26.94         &	       14.39         &	        7.25         &	       12.15         \\
+\ Control function: $\pi\left( \mu \right)$       &       28.92         &	       47.20         &	       10.77         &	        2.64         &	       16.04         &	       19.96         \\
+\hline
+$R^{2}$        &        0.07         &	        0.05         &	        0.08         &	        0.09         &	        0.04         &	        0.07         \\
+Individuals         &       36162         &	       31392         &	       36320         &	       10010         &	        7642         &	        9162         \\
+N           &      122853         &	       88037         &	      126203         &	       19617         &	       12142         &	       16930         \\ 
+\hline
+	\end{tabular} \\
+	\begin{minipage}[t]{2\columnwidth}%
+		  \begin{spacing}{1}
+		  \noindent 
+		  {Notes: \emph{Idem} \\
+			  $^{\circ}$ Conditional on being already a mother. \\
+		  $^{\diamond}$ Conditional of being already pregnant/married for first marriage/pregnancy.} 		 
+		  \end{spacing}
+	  \end{minipage}
+	\label{tab:SSSomeVarsonhomRateDD1020}
+\end{table*}
+
+Table \ref{tab:SSSomeVarsonhomRateDD1020} shows the estimation of the impact of homicides on the hazard of different correlated outcomes such as first pregnancy, first intercourse, first marriage and second pregnancy. As a reference point, column 1 shows the effect on the hazard of first pregnancy (the same as of column 2 in table \ref{tab:preg2onhomRate_ssfromDD1020}). According to column 2, an increase in the homicide rate reduces the hazard of early intercourse by 5.9 pp. This may be due to a shortage of available men. In addition, this finding may reinforce the idea that teenage pregnancy is a rational rather than irrational decision when women experience more armed violence in their town of residence. 
+
+In column 3, I explore the effect of homicides on the hazard of early marriage. Thus, one standard deviation increase in the homicide rate increases by 2.53 pp the probability marriage before 19 years old. Interestingly, teenage marriage and pregnancy seem strongly correlated strategies in response to increases in the local armed violence. According to my hypothesis, women may make a choice of early pregnancy and marriage to guarantee a certain level of utility in the marriage market when the expectations in this market reduce. This strong correlation is also shown in figure \ref{fig:MotherVSMarriage}. The figure shows that until the age of 19, the probability of not being married when you are a mother, or not being a mother if you are married is not larger than 10\%. What is more, the likelihood of having children out of the wedlock is larger than the probability of being married without any offspring. 
+
+\begin{figure}[h]
+  \centering
+	\includegraphics[scale=0.45]{MarriedVSMother.png}
+  \caption{Probability of not being a mother/married, conditional on being married/a mother}
+  \label{fig:MotherVSMarriage}
+  \end{figure}
+
+Then, columns 5 and 6 try to explore deeper the relationship between the timing of marriage and pregnancy. The result suggest that one standard deviation rise in the homicide rate increases by 2.39 pp the probability of early pregnancy for women who are already married, and by 6.39 pp the probability of early marriage for women who are already pregnant. In these conditional cases, the effect on marriage is significantly larger than the effect on pregnancy. This suggests that the close correlation of marriage and pregnancy is driven more for cases of teenage women getting married after becoming pregnant, rather than teenage women marrying before pregnancy.
+
+Column 4 studies the effect of homicides on second pregnancy for women who already have had one baby. According to section \ref{sec:DiscussVioOnPreg}, a young woman will decide to be a mother if she foresees the possible losses in the marriage market are larger than the cost of teenage motherhood on the future labor market. However, when a woman already has one baby there are no extra gains in the marriage market. If I assume that the losses in the labor market are weakly concave with respect the number of babies, then the cost in the future labor market of the second baby is not as large as the cost of the first offspring. Therefore, increases in the homicide rate may not increase or decrease the hazard of second pregnancy. Column 4 shows that one standard deviation decreases by 4.12 pp the probability of getting pregnant for the second time. However, this effect is not statistically significant.
+
+\begin{table}[h]
+	\caption{\\ Second stage estimations. Homicide rates by gender and age range on the hazard of first pregnancy for women from 15 to 19 years old. Instrumented with cocaine trafficking.}
+	\footnotesize
+	\begin{tabular}{lcccc}
+		\hline
+		& \multicolumn{4}{c}{{ Age range}} \\
+		&	All&	5 to 14&	15 to 44& 	45  to 64 \\
+		\hline
+		\multicolumn{5}{l}{{Male}} \\
+					
+Homicides	&	       0.079\sym{**} &	       0.103\sym{*}  &	       0.082\sym{**} &	       0.122         \\
+	&	     (0.035)         &	     (0.054)         &	     (0.036)         &	     (0.113)         \\
+Instrument$^{\dagger}$	&	       28.51         &	       20.97         &	       24.92         &	       21.20         \\
+Control Function$^{\ddagger}$	&	       36.77         &	       18.75         &	       32.87         &	        2.38         \\
+\hline
+\multicolumn{5}{l}{{Female}} \\				
+Homicides	&	       0.115         &	       0.256         &	       0.140\sym{*}  &	      -0.019         \\
+	&	     (0.071)         &	     (0.170)         &	     (0.073)         &	     (0.242)         \\
+Instrument$^{\dagger}$	&	        5.36         &	        5.49         &	        6.56         &	        4.79         \\
+Control Function$^{\ddagger}$ &	       15.23         &	        4.79         &	       29.92         &	       19.88         \\
+\hline
+	\end{tabular}
+	\begin{minipage}[t]{1\columnwidth}%
+		  \begin{spacing}{1}
+		  \noindent 
+		  {Notes: All the estimations control for all the variables described in tables \ref{tab:IndividualDescriptivesDHS} and \ref{tab:MunControlDesc}. The estimations also include year, birth cohort, household income quartile and municipality fixed effects. Standard errors clustered by Department in parentheses - 33 clusters. \sym{*} $p<0.1$, \sym{**} $p<0.05$, \sym{***} $p<0.01$. \\
+			 $^{\dagger}$ Joint significance F Test on the instrument $DD_{mt}$ as defined in equation \ref{eq:DrugTrafickingDef}. \\
+			 $^{\ddagger}$ Joint significance F test on the control function $\pi\left( \mu \right) = \sum_{n=1}^{3}\eta_{n}\mu^{n}$.
+		 } 		 
+		  \end{spacing}
+	  \end{minipage}
+	\label{tab:SSHomRatesByGender}
+\end{table}
+
+Section \ref{sec:DiscussVioOnPreg} discusses the importance of changes in the sex ratios due to the effect of the differences between male and female homicide rates. For that reason table \ref{tab:SSHomRatesByGender} summarises the main results of the second stage estimations using the homicide rate by gender and age range. The table shows that male homicides from 4 to 15 and 15 to 44 have a positive, significant impact on the hazard of first pregnancy between 15 to 19 years old. The effect is not significant when the independent variable is the homicide rate of males from 45 to 64. This show that the homicides related with the possible marriage market of teenagers is the one that actually affects the pregnancy decision. 
+
+Unfortunately, the table shows also that the instrument is not relevant for female homicides. For that reason, the results of the impact of women homicides are biased. Therefore, I estimate the change in sex ratios from 1990 to 2009 due to homicides. Then, for a municipality $m$ and age range $j$:\footnote{Figure \ref{fig:D_SR} shows the relationship between $\hat{SR}_{mj2009}$ and $SR_{mj1990}$ when $j=$ 15 to 44.}
+
+\begin{equation*}
+	\Delta \hat{SR}_{mj} = \frac{\hat{SR}_{mj2009}}{SR_{mj1990}} -1
+\end{equation*}
+
+Where: 
+
+\begin{align*}
+	\hat{SR}_{mj2009} &= \frac{\textrm{males}_{mj1990} - \sum_{t=1990}^{2009}\textrm{male homicides}_{mjt}}{\textrm{females}_{mj1990} - \sum_{t=1990}^{2009}\textrm{female homicides}_{mjt}} \\ \\
+	SR_{mj1990} &= \frac{\textrm{males}_{mj1990}}{\textrm{females}_{mj1990}}.
+\end{align*}
+
+\begin{table}[h]
+	\caption{\\ Second stage estimations. Homicide rate on the hazard of first pregnancy for women from 15 to 19 years old. Using the interaction between the homicide rate and the estimated change in the sex ratio by age. Instrumented with cocaine trafficking.}
+	\footnotesize
+	\begin{tabular}{lccc}
+		\hline
+		& \multicolumn{3}{c}{{Age range - $j$}} \\
+			&	5 a 14 &	15 a 44 &	45 a 64 \\
+		\hline
+Homicides	&	       0.084         &	       0.107\sym{**} &	       0.080\sym{**} \\
+	&	     (0.053)         &	     (0.054)         &	     (0.036)         \\
+Homicides x Large change	&	      -0.005         &	      -0.030         &	      -0.064\sym{*}  \\
+	&	     (0.027)         &	     (0.029)         &	     (0.033)         \\
+Large change$^{\bullet}$ 	&	       2.109         &	       0.775\sym{*}  &	      -0.425         \\
+	&	     (1.868)         &	     (0.462)         &	     (0.666)         \\
+	\hline
+	$p_{j}(3)$	&	-0.25 \%& 	-9.19 \%& 	-6.27 \% \\ 
+Control Function	&	20.59&	26.28&	9.03 \\
+\hline
+	\end{tabular}
+	\begin{minipage}[t]{1\columnwidth}%
+		  \begin{spacing}{1}
+		  \noindent 
+		  {Notes: All the estimations control for all the variables described in tables \ref{tab:IndividualDescriptivesDHS} and \ref{tab:MunControlDesc}. The estimations also include year, birth cohort, household income quartile and municipality fixed effects. Standard errors clustered by Department in parentheses - 33 clusters. \sym{*} $p<0.1$, \sym{**} $p<0.05$, \sym{***} $p<0.01$. \\
+			 $^{\bullet}$ Large change is defined as $1\left[\Delta \hat{SR}_{mj} \leq p_{j}\left( 3 \right)\right]$.   \\
+			 $^{\ddagger}$ Joint significance F test on the control function $\pi\left( \mu \right) = \sum_{n=1}^{3}\eta_{n}\mu^{n}$.
+		 } 		 
+		  \end{spacing}
+	  \end{minipage}
+
+	\label{tab:SSHomRateSRChange}
+\end{table}
+
+In table \ref{tab:SSHomRateSRChange} the effect of the interaction between the total homicide rate and a dummy that is equal to 1 for the municipalities where the estimated change in the sex ratio belongs to the third percentile of the distribution. Given that the changes are negative in the majority of the cases, the municipalities in the third percentile are the ones where the difference between male and female homicides is larger. There are 3 important facts in this table. Firstly, the changes in the sex ratio are stronger for adults than for children. The third percentile from 5 to 14 is only -0.25\% while the value is -9.19\% from 15 to 44 and -6.27\%. Secondly, in municipalities where the change in the sex ratio from 15 to 44 is large, teenage women have 0.77 higher hazard of being pregnant before 19. However, the effect of homicides on their pregnancy decision is not significantly different from municipalities with lower changes in the sex ratio. Thirdly, the effect of homicides on the hazard of first pregnancy is 0.064 points smaller in the municipalities where the sex ratio from 45 to 64 years old changed more. 
+
+The interpretation of the last set of results is the following: Firstly, given that homicides are more even in the youngest population and they are still outside the marriage market the differences between male and female homicides do not affect the pregnancy decisions of women from 15 to 19 years old. Secondly, the municipalities where the 15 to 44 years old sex ratio changed the must in the last 20 years are the ones with the highest hazard of teenage pregnancy. This comes along the model in section \ref{sec:Model}, where I claim that women who expect less available men in the adulthood have more incentives to become young mothers.
+
+Unfortunately, as can be seen in table \ref{tab:SSInterctions} I do not find direct evidence of the effect of homicides on the expectations in the labor market on the pregnancy decisions. 
+
+\section{Conclusions\label{sec:Conclusions}}
+
+This work contributes to the analysis of the economic consequences and cost of violent crime, armed conflict and war. I use of international cocaine prices and internal cocaine trafficking network to identify the effect of homicides at the municipality level on the prevalence of teenage motherhood in Colombia. 
+
+A reduced form estimation shows that when the cocaine price in the Unites States increases, the homicide rate increases in the municipalities part trafficking from the Colombian Pacific and  Atlantic coast and Venezuela North . Meanwhile, homicides rise in the municipalities involved in trafficking through the Atlantic coast and the southern Venezuelan border when the price of cocaine increases in Europe. 
+
+My second stage results suggest that one standard deviation increase in the municipality homicide rate  rises by 2.15 pp the probability that a woman become pregnant between 15 to 19 years old. The effect remains positive but not statistically significant for women from 20 to 24 and 25 to 29 years old. When the homicide rate increases by one standard deviation I also found that: (i) the probability of first marriage between 15 to 19 years old also rises by 2.52 pp. (ii) The probability of having a second pregnancy conditional to already having one baby reduces by 4.12 pp, however the effect is not statistically significant. (iii) The effect of homicides on the hazard of first marriage conditional on being pregnant is significantly higher than the effect of homicides on the hazard first pregnancy conditional on being married.
+
+In addition I found that male homicides from 15 to 44 years old have a stronger effect on the pregnancy decision. Municipalities where the sex ratio from 15 to 44 years old fell more than 9.1\% from 1990 to 2009 are the ones where young women are more likely to get pregnant. However, the effect of homicides is not statistically different by city size, wealth quantile or between urban and rural areas. 
+
+The latest results suggest that homicides, and especially the inequality between male and female homicides, change the expectations of young women in the marriage market more than in the labor market. Thus, when the homicide rate rises young women have more incentives to become mothers and married to secure consumption in the marriage market when they foresee a decrease in future utility due to the rise of armed violence. 
+
+\section*{Acknowledgments} 
+	I am grateful to Orazio Attanasio and Marcos Vera-Hern\'andez for their supervision and their suggestions to this paper. Special thanks to Fabio Sanchez who provided me with data on violence. Finally I want to thank Carolina Restrepo for her exceptional help in cleaning data.
+
+%%%%% Appendixes will begin here	
+\begin{appendix}
+
+\section{Testing the functional form of the duration model\label{App:FunctForm}}
+
+One of the main concerns in my identification strategy come from the functional form of the \emph{cdf} $\Lambda$ and the control function $\pi\left( \mu \right)$.  For that reason in this appendix I allow these functions to have different functional forms in order to show that the choice of the shape of $\Lambda$ and $\pi\left( \mu \right)$ does not constraint the results.
+
+First, recalling from section \ref{sec:EstStr} the control function approach comes from the joint distributional assumptions of the error terms $\left(\varepsilon,\,\mu\right)$. Hence, in my estimations so far I assume that the joint distribution is such that $\varepsilon= \sum_{n=1}^{3}\eta_{n}\mu^{n} + \omega$ where $\omega$ has a logistic form. Now I allow  $\varepsilon= \sum_{n=1}^{j}\eta_{n}\mu^{n} + \omega$ with $j \in \left\{1, \dots, 5  \right\} $ to have a polynomial form of degree $j$ in order to approach to any nonlinear shape. However, I maintain the logistic distribution of $\omega$. 
+
+\begin{table}[h]
+	\caption{\\
+		Second stage estimations using different polynomial forms for the Control Function - $\pi\left( \mu \right)$. Homicide rates on the hazard of first pregnancy for women from 15 to 19 years old. Instrumented with cocaine trafficking.}
+	\footnotesize	
+	\begin{tabular}{lccccc}
+		\hline
+		& \multicolumn{5}{c}{{Control function polynomial degree $\left( j \right)$}} \\
+		      &          1           &	                     2&	                     3&	                     4&	                     5 \\
+		\hline
+Homicides        &       0.086\sym{**} &	       0.087\sym{**} &	       0.079\sym{**} &	       0.079\sym{**} &	       0.084\sym{**} \\
+            &     (0.038)         &	     (0.037)         &	     (0.036)         &	     (0.036)         &	     (0.038)         \\
+			
+$h_{0}\left( j \right)$         &       0.847\sym{***}&	       0.847\sym{***}&	       0.847\sym{***}&	       0.847\sym{***}&	       0.847\sym{***}\\
+            &     (0.033)         &	     (0.033)         &	     (0.033)         &	     (0.033)         &	     (0.033)         \\
+				
+Constant      &      -7.819\sym{***}&	      -7.791\sym{***}&	      -7.617\sym{***}&	      -7.631\sym{***}&	      -7.772\sym{***}\\
+            &     (1.776)         &	     (1.778)         &	     (1.802)         &	     (1.799)         &	     (1.779)         \\
+\hline				
+F Test$^{\ddagger}$      &        1.13         &	        2.43         &	       28.92         &	       31.61         &	       58.85         \\
+$R^{2}$       &        0.07         &	        0.07         &	        0.07         &	        0.07         &	        0.07         \\
+\hline
+	\end{tabular}
+	\begin{minipage}[t]{1\columnwidth}%
+		  \begin{spacing}{1}
+		  \noindent 
+		  {Notes: All the estimations control for all the variables described in tables \ref{tab:IndividualDescriptivesDHS} and \ref{tab:MunControlDesc}. The estimations also include year, birth cohort, household income quartile and municipality fixed effects. Standard errors clustered by Department in parentheses - 33 clusters. \sym{*} $p<0.1$, \sym{**} $p<0.05$, \sym{***} $p<0.01$. \\
+			 $^{\ddagger}$ Joint significance F test on the control function is $\pi\left( \mu \right) = \sum_{n=1}^{j}\eta_{n}\mu^{n}$.} 		 
+		  \end{spacing}
+	  \end{minipage}
+	\label{tab:SSPregnancyonhomRateDD10byCFpoly}
+\end{table}
+
+Table \ref{tab:SSPregnancyonhomRateDD10byCFpoly} show coefficients of main interest and the join significance test for the control function polynomial. The joint significance F test rises from 2.43 to 28.92 when the polynomial degree increases from 2 to 3. This is evidence that $\pi\left( \mu \right)$ is not a linear function as it is assumed in more standard instrumental variable models. Nevertheless, the coefficients on the homicide rate do not vary with the polynomial form. Thus, the results exposed in section \ref{sec:Result} are consistent independently from the functional form of $\pi\left( \mu \right)$.
+
+Second, I maintain the shape of $\pi$ as the 3rd degree polynomial and change the assumptions on the distribution of $\omega$. If $\left(\varepsilon,\,\mu\right)$ have a join normal distribution and $\sigma_{\mu}=1$, then $\mu=\rho\varepsilon+\omega$ where $\omega\sim N\left(0,\,1\right)$ - (\citet{BlundellPowell2004}).  Therefore, the latest will identify $\gamma$ using a lineal probability model or a probit model to estimate $h$. The problem of using the probit and linear specification is that they do not have properties of the proportional hazard model. For that reason, I estimate as well a clog-log regression which maintains the proportional hazard qualities but implies that $\omega$ has an extreme value distribution function.  
+
+\begin{table}[h]
+	\caption{\\ 
+		Second stage estimations using different functional forms for the duration function - $\Lambda$. Homicide rates on the hazard of first pregnancy for women from 15 to 19 years old. Instrumented with cocaine trafficking.}
+	\footnotesize	
+	\begin{tabular}{lccccc}
+		\hline				
+		&	Logit&                     Probit&                     Clog-log&	Linear& IV$^{\dagger}$ \\
+	  \hline	  
+Homicides        &	0.079\sym{**} &      0.040\sym{**} &      0.073\sym{**} &	     0.005\sym{*}  &	     0.005\sym{**} \\	
+&	(0.036)         &     (0.018)         &     (0.034)         &	     (0.002)         &	     (0.002)         \\	
+$h_{0}\left( j \right)$        &	0.847\sym{***}&       0.427\sym{***}&       0.797\sym{***}&	      0.0571\sym{***}&	      0.0571\sym{***}\\	
+&	(0.033)         &     (0.016)         &     (0.032)         &	     (0.002)         &	     (0.002)         \\	
+\hline				
+F Test$^{\ddagger}$       &	28.92         &       36.77         &       25.70         &	        8.95         &	                     \\	
+$R^{2}$        &	0.07         &        0.07         &                     &	                    0.04 &	                0.04     \\	
+\hline 			
+	\end{tabular}
+	\begin{minipage}[t]{1\columnwidth}%
+		  \begin{spacing}{1}
+		  \noindent 
+		  {Notes: \emph{Idem} \\
+			$^{\ddagger}$ Joint significance F test on the control function is $\pi\left( \mu \right) = \sum_{n=1}^{3}\eta_{n}\mu^{n}$.} 		 
+		  \end{spacing}
+	  \end{minipage}
+	\label{tab:DiscreteModelPreg2OverFunctionalForm}
+\end{table}
+
+Table  \ref{tab:DiscreteModelPreg2OverFunctionalForm} shows the resulting estimates for the discrete duration model using different specifications of $\omega$. The table shows that the main results remain constant over different estimations. The difference between the coefficients is the result of the functional form, while the size of the effect may differ between linear and non-linear forms, the sense of the coefficients and the interpretation does not change with respect to the logistic model use in the main specification of this paper.
+
+\section{Support tables\label{App:SupTables}}
+	\begin{table*}[h]
+	\caption{\\ Individual characteristics - descriptive statistics}
+	\footnotesize
+	\begin{tabular}{L{4cm} cccccccc} \hline
+		Variable &   \multicolumn{4}{c}{{Full sample}} &   \multicolumn{4}{c}{{ Adolescents $\left(\textrm{13 to 19}\right)$}}  \\
+            &        mean&          sd&         min&         max&        mean&          sd&         min&         max\\
+\hline
+Age       &       				29.45&       10.65&          13&          49&       16.03&        1.97&          13&          19\\
+\% 13 to 19                                                &  0.23  & 0.42 & 0  & 1  &       &      &    &    \\  \hline
+\multicolumn{9}{l}{{\emph{Sexual activity and marriage}}}  \\
+Age at first intercourse                                   &  17.81 & 3.59 & 8  & 45 & 15.22 & 1.58 & 8  & 19 \\
+Age at first pregnancy\sym{*}                               &  19.95 & 4.46 & 13 & 45 & 15.76 & 1.49 & 13 & 19 \\
+Age at first birth                                         &  20.75 & 4.50 & 13 & 46 & 16.30 & 1.43 & 13 & 19 \\
+Age at first marriage                                      &  20.37 & 4.88 & 13 & 47 & 15.75 & 1.60 & 13 & 19 \\  \hline
+\multicolumn{9}{l}{{\emph{Migration $\left( \% \right)$}}} \\
+Ever migrate                                               &  0.47  & 0.50 & 0  & 1  & 0.33  & 0.47 & 0  & 1  \\
+Migrate after 13 y.o.                                      &  0.36  & 0.48 & 0  & 1  & 0.13  & 0.34 & 0  & 1  \\
+Migrate after 15 y.o.                                      &  0.33  & 0.47 & 0  & 1  & 0.09  & 0.28 & 0  & 1  \\
+Migrate after 20 y.o.                                      &  0.22  & 0.42 & 0  & 1  & 0.00  & 0.00 & 0  & 0  \\
+Migrate after 25 y.o.                                      &  0.14  & 0.34 & 0  & 1  & 0.00  & 0.00 & 0  & 0  \\  \hline
+\multicolumn{9}{l}{{\emph{Birth cohort}}}                  \\
+before 1985                                                &  0.70  & 0.46 & 0  & 1  & 0.09  & 0.28 & 0  & 1  \\
+1985 to 1989                                               &  0.14  & 0.34 & 0  & 1  & 0.27  & 0.44 & 0  & 1  \\
+1990 to 1994                                               &  0.12  & 0.32 & 0  & 1  & 0.46  & 0.50 & 0  & 1  \\
+after 1995                                                 &  0.04  & 0.20 & 0  & 1  & 0.19  & 0.39 & 0  & 1  \\  \hline
+\multicolumn{9}{l}{{\emph{Household characteristics}}}     \\
+\% in urban areas                                          &  0.78  & 0.41 & 0  & 1  & 0.75  & 0.43 & 0  & 1  \\
+\# of household members                                    &  5.02  & 2.26 & 1  & 21 & 5.47  & 2.34 & 1  & 21 \\  \hline	
+\multicolumn{9}{l}{{\emph{Ethnicity}}} \\
+White     &        0.50&        0.50&           0&           1&        0.49&        0.50&           0&           1\\
+Indigenous     &        0.02&        0.14&           0&           1&        0.02&        0.14&           0&           1\\
+Afro-colombian     &        0.05&        0.22&           0&           1&        0.06&        0.23&           0&           1\\
+Other minority     &        0.43&        0.50&           0&           1&        0.43&        0.50&           0&           1\\ \hline
+\multicolumn{9}{l}{{\emph{Parents mortality - Household \% where the father/mother is dead}}} \\
+Mother is dead  &        0.14&        0.34&           0&           1&        0.02&        0.16&           0&           1\\
+Father is dead  &        0.27&        0.45&           0&           1&        0.09&        0.28&           0&           1\\
+Both parents are dead &        0.07&        0.26&           0&           1&        0.01&        0.07&           0&           1\\ 
+\hline
+\end{tabular} \\
+	\begin{minipage}[t]{1\columnwidth}%
+		  \begin{spacing}{1}
+			   \noindent{\footnotesize{} Notes:	Author calculations using DHS 2000 - 2010. Mean and standard deviation estimations using probability weights. N = 106405 women from 13 to 49 y.o. \\
+			  \sym{*} Include also pregnancy events that ended up with miscarriage.}
+		  \end{spacing}
+	  \end{minipage}
+	\label{tab:IndividualDescriptivesDHS}
+\end{table*}
+\begin{table*}[h]
+	\caption{\\ Municipality level control variables - Descriptive statistics}	
+	\footnotesize
+	\begin{tabular}{L{6cm} cccc}
+\hline
+            Variable&        mean&          sd&         min&         max\\
+\hline
+Municipality with coca bushes (\%)&        0.28&        0.45&           0&           1\\
+Municipality at the border (\%)&        0.10&        0.30&           0&           1\\
+Population ($Ln$)        &       10.30&        1.16&           8&          16\\
+Male population (\%)    &        0.50&        0.02&           0&           1\\
+Urban population (\%)   &        0.49&        0.26&           0&           1\\
+Roads (km)     &      495.41&      817.84&           0&        8988\\
+Primary roads (km)  &       38.32&       50.82&           0&         623\\
+Primary roads (\%) &        0.13&        0.14&           0&           1\\
+Area ($km^{2}$)        &     1550.04&     4867.64&          18&       65557\\
+Road density (1/km) &        0.80&        0.45&           0&           2\\
+Population density (habitants per $km^{2}$)  &      278.01&      978.78&           0&       13929\\
+Oil effect$^{*}$   &        0.26&        3.68&           0&         150\\
+Coffee effect$^{*}$&       91.84&      195.77&           0&        1476\\
+Uribe's government$^{\dagger}$      &        0.40&        0.49&           0&           1\\
+Chavez's government$^{\dagger}$ &        0.55&        0.50&           0&           1\\
+Municipality with Familias en Acci\'on (\%)$^{\ddagger}$&        0.20&        0.40&           0&           1\\
+Departmental GDP per capita$^{\circ}$   &     4472.15&     3598.12&         311&       28966\\
+\hline
+\end{tabular}\\ 
+\begin{minipage}[t]{1\columnwidth}%
+		 \begin{spacing}{1}
+		  \noindent {\footnotesize{} Notes: \\
+			  $^{*}$ Based on \citet{DubeVargas2013}. \\
+			  $^{\dagger}$ Dummy equal to 1 when \'Alvaro Uribe Velez/Hugo Ch\'avez Fr\'ias was the president of Colombia/Venezuela \\
+			  $^{\ddagger}$ Municipalities with the CCT program Familias en Acci\'on. \\
+			  $^{\circ}$ Million pesos (COP) per year.}
+		  \end{spacing}
+	  \end{minipage}
+
+	\label{tab:MunControlDesc}
+\end{table*}
+
+\begin{table}[h]
+	 \centering
+	\caption{\\ Second stage estimations. Homicide rate on the hazard of first pregnancy for women from 15 to 19 years old. Using the interaction between the homicide rate and some variables. Instrumented with cocaine trafficking.}
+	\footnotesize
+	\centering
+	\begin{tabular}{lccc}
+		\hline
+		&	(1)	&	(2)	&	(3) \\ 
+			\hline
+Homicides	&	0.047	&	0.090\sym{**}	&	       0.072\sym{*}  \\
+&	(0.048)	&	(0.036)	&	     (0.037)         \\ 
+\hline
+Homicides x Urban	&	0.034	&		&	\\
+&	(0.027)	&		&	\\
+Urban	&	0.065	&		&	\\
+&	(0.046)	&		&	\\ 
+\hline
+Homicides x Poor&		&	-0.036	&	\\
+&		&	(0.031)	&	\\
+Homicides x Medium income	&		&	-0.019	&	\\
+&		&	(0.023)	&	\\
+Poor$^{\circ}$ &		&	1.473\sym{***}	&	\\
+&		&	(0.047)	&	\\
+Medium income$^{\circ}$ 	&		&	1.053\sym{***}	&	\\ 
+&		&	(0.032)	&	\\ \hline
+Homicides x Small city	&		&		&	       0.032         \\
+            	&		&		&	     (0.032)         \\
+Homicides x Medium  city&		&		&	       0.030         \\
+            	&		&		&	     (0.063)         \\
+Small city$^{\dagger}$    	&		&		&	      -2.905\sym{*}  \\
+            	&		&		&	     (1.663)         \\
+Medium  city$^{\dagger}$     &		&		&	      -2.708\sym{*}  \\ 
+	&		&		&	     (1.605)         \\ \hline
+	$h_{0}\left( j \right)$	&	0.847\sym{***}	&	0.847\sym{***}	&	       0.847\sym{***}\\
+	&	(0.033)	&	(0.033)	&	     (0.033)         \\
+Constant	&	-7.433\sym{***}	&	-7.303\sym{***}	&	      -4.667\sym{***}\\
+&	(1.852	&	(1.893)	&	     (1.549)         \\ \hline
+$R^{2}$	&	0.07	&	0.07	&	        0.07         \\
+Individuals	&	35792	&	35781	&	       35787         \\ 
+\hline
+	\end{tabular} \\ 
+	\begin{minipage}[t]{1\columnwidth}%
+		  \begin{spacing}{1}
+		  \noindent 
+		  {Notes: All the estimations control for all the variables described in tables \ref{tab:IndividualDescriptivesDHS} and \ref{tab:MunControlDesc}. The estimations also include year, birth cohort, household income quartile and municipality fixed effects. Standard errors clustered by Department in parentheses - 33 clusters. \sym{*} $p<0.1$, \sym{**} $p<0.05$, \sym{***} $p<0.01$. \\
+			 $^{\circ}$ Poor = households in the 2 lowest income quartiles. Medium = households in the 3 income quartile. \\
+			 $^{\dagger}$ Small city = Less than 100 thousand inhabitants. Medium city = Between 100 thousand to 1 million inhabitants. 
+		 } 		 
+		  \end{spacing}
+	  \end{minipage}
+	\label{tab:SSInterctions}
+\end{table}
+
+\end{appendix}
+
+%%%%%  bibliography!!!
+\clearpage
+\section*{References}
+\bibliographystyle{elsarticle-harv}
+\bibliography{BibFertiltyConflict}
+
+\end{document}
+
+
+
